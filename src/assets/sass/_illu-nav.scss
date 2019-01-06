@@ -1,0 +1,44 @@
+#illu-nav{
+  .black {
+    fill: #000;
+    stroke-width: 0.2;
+    stroke: #fff;
+    transition: fill 0.5s ease-in-out, stroke 0.5s ease-in-out;
+  }
+  .__color-nav {
+    fill: transparent;
+    stroke-width: 0.2;
+    stroke: $color_primary;
+    transition: stroke 0.5s ease-in-out, fill 0.5s ease-in-out;
+  }
+  .__tcolor {
+    fill: $color_primary;
+    stroke-width: 0.2;
+    transition: stroke 0.5s ease-in-out, fill 0.5s ease-in-out;
+  }
+}
+
+.illu-nav {
+  position: fixed;
+  width: 40%;
+  top: 26%;
+  right: -1px;
+  opacity: 0;
+  transform: translateX(100vh);
+  transition: 0.3s ease-in-out;
+  transition-delay: 0s;
+    &.__is-open {
+      z-index: 100;
+      opacity: 1;
+      transform: translateX(0);
+      transition: 0.3s ease-in-out;
+      transition-delay: 0.55s;
+    }
+}
+
+/**** responsive ****/
+@include maxwidth(xs) {
+  .illu-nav {
+    display: none;
+  }
+}

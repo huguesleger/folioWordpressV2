@@ -1,0 +1,55 @@
+/*
+---------------
+ section design
+---------------
+*/
+.section-design {
+    .row {
+      .design-left {
+       display: flex;
+       padding-top: 30px;
+         .design-block {
+           padding-right: 20px;
+           padding-left: 0;
+             .title-block {
+               font-family: $font_secondary;
+               font-weight: 700;
+               text-transform: capitalize;
+               margin-bottom: 1rem;
+                .design-icon {
+                  padding: 8px;
+                  width: 36px;
+                  display: inline-block;
+                  text-align: center;
+                  background-color: $color_primary;
+                  color: #fff;
+                  margin-right: 10px;
+                }
+             }
+         }
+     }
+     .design-img {
+       position: relative;
+       margin: 0 auto;
+       .device-img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: 4% 4% 28% 4%;
+          overflow: hidden;
+       }
+     }
+    }
+}
+
+/**** responsive ****/
+@include maxwidth(lg) {
+  .section-design .row {
+    flex-wrap: wrap-reverse;
+      .design-left {
+        flex-wrap: wrap;
+      }
+  }
+}

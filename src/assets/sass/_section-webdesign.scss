@@ -1,0 +1,49 @@
+/*
+---------------
+ section webdesign
+---------------
+*/
+.section-webdesign {
+  .wrap-top {
+    background-color: $color_primary;
+    overflow: hidden;
+    .wrap-webdesign {
+      display: flex;
+      .webdesign-block-txt {
+        padding: 3rem;
+        background-color: #fff;
+      }
+      .content-parallax {
+        max-height: 650px;
+      }
+    }
+  }
+  .wrap-bottom {
+    background-color: $color_grey_light;
+    .wrap-device {
+      position: relative;
+      margin: 0 auto;
+      .device-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 3% 14% 7% 14%;
+        overflow: hidden;
+      }
+    }
+    .device-block-txt {
+      padding: 3rem;
+    }
+  }
+}
+
+/**** responsive ****/
+@include maxwidth(xxs) {
+.section-webdesign .wrap-top .wrap-webdesign {
+  flex-direction: column;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+}

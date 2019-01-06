@@ -1,0 +1,267 @@
+/**** header home ****/
+.header-home {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100vh;
+  background-color: $color_header;
+  overflow: hidden;
+}
+
+/**** texte metier ****/
+.txt-job {
+  color: #fff;
+  font-size: 50px;
+  font-family: $font_secondary;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.8;
+  margin: 0;
+  padding-left: 75px;
+  transform: translateY(0);
+  transition: transform 0.3s;
+  transition-delay: 0.85s;
+    span {
+      display: block;
+      &:nth-child(1){
+        font-weight:200;
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &:nth-child(2){
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &:nth-child(3){
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &:nth-child(4){
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &:nth-child(6){
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &:nth-child(7){
+        transform: translateY(0);
+        transition: transform 0.3s;
+        transition-delay: 0.85s;
+      }
+      &.__hide {
+        transform: translateY(-100vh);
+        transition: transform 0.3s;
+        // transition-timing-function: cubic-bezier(0.79, 0.32, 0.16, 1.01);
+        transition-delay: 0.85s;
+         &:nth-child(5) {
+           transform: none;
+           opacity: 0;
+           transition: opacity 0.3s ease-in-out;
+           transition-delay: 0.35s;
+         }
+      }
+    }
+    .txt-dev {
+      margin-top: 40px;
+    }
+    .txt-and {
+      position: absolute;
+      left: -42px;
+      top: 45%;
+      color: $color_yellow;
+      background-color: $color_header;
+      padding: 25px;
+      border-radius: 50%;
+      font-size: 60px;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+      transition-delay: 0.35s;
+      // transform: translateX(-42px);
+    }
+    .sub-title-job {
+      font-weight: normal;
+      font-size: 13px;
+      padding-top: 8px;
+    }
+}
+
+
+/**** btn header ****/
+.btn-hello {
+  position: absolute;
+  bottom: 25px;
+  left: 35px;
+  background-color: $color_header;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+    &.__cliked {
+      background-color: $color_grey_light;
+      pointer-events: none;
+      transition: 0.2s ease-in-out;
+    }
+}
+.btn-close {
+  color: $color_header;
+  background-color: $color_primary;
+}
+
+/**** texte presentation ****/
+.presentation {
+  z-index: 1;
+  color: #fff;
+  transform: translateY(100vh);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 90px;
+  margin-right: 90px;
+  transition: transform 0.8s;
+    h2 {
+      font-family: $font_secondary;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .presentation-ville {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: $color_primary;
+    }
+    p{
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: 200;
+    }
+    &.__show {
+      transform: translateY(0);
+      transition: transform 0.8s;
+      transition-timing-function: cubic-bezier(0.79, 0.32, 0.16, 1.01);
+      transition-delay: 0.95s;
+    }
+}
+
+.phone-orientation {
+  display: none;
+}
+
+.txt-job-responsive {
+  display: none;
+}
+
+/**** responsive ****/
+@include minwidth(lg) {
+  .enter-responsive {
+    display: none;
+  }
+}
+@include maxwidth(lg) {
+  .txt-job {
+    font-size: 40px;
+    padding-left: 55px;
+  }
+}
+@include minmaxwidthlandscape(md, lg) {
+  .txt-job {
+    font-size: 40px;
+    padding-left: 45px;
+    .txt-and {
+      font-size: 50px;
+      left: -30px;
+      padding: 15px;
+    }
+  }
+  .enter-responsive {
+    display: none;
+  }
+}
+
+@include maxwidthlandscape(md) {
+  header {
+    display: none !important;
+  }
+  .phone-orientation {
+    width: 100%;
+    height: 100vh;
+    background-color: $color_header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      .phone-content {
+        width: 10%;
+          p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            color: #000;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 350px;
+          }
+      }
+  }
+  .site-content {
+    display: none;
+  }
+}
+
+@include maxwidth(md) {
+  .btn-hello {
+    display: none;
+  }
+  .txt-job-responsive {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .txt-job-content {
+      display: block;
+      padding-left: 45px;
+      padding-right: 45px;
+      overflow: hidden;
+    }
+      .txt-job {
+        font-size: 18px;
+        text-align: center;
+        padding-left: 0;
+        animation-delay: 2s;
+          span {
+            padding: 5px 0;
+            display: inline-block;
+          }
+      }
+      .txt-and-responsive {
+        font-weight: 200;
+      }
+  }
+  .enter-responsive {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    bottom: 0;
+      .go-enter {
+        margin-bottom: 50px;
+      }
+  }
+}
+
+@include maxwidth(xs) {
+  .header-home {
+    // width: 100%;
+    // position: fixed;
+  }
+}

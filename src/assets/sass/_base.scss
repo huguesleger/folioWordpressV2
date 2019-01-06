@@ -1,0 +1,122 @@
+
+
+body {
+  width: 100%;
+  font-family: $font_primary;
+  padding: 0;
+    &.__overflow {
+      overflow: hidden;
+    }
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/**** home main ****/
+.home .main {
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: 0.3s ease-in-out;
+    &.__bg-color {
+      background-color: #fff;
+      transition: 0.3s ease-in-out;
+
+    }
+}
+
+/**** btn-round ****/
+.btn-round-xs {
+  width: 30px;
+  height: 30px;
+}
+.btn-round-sm {
+  width: 50px;
+  height: 50px;
+}
+.btn-round {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/**** btn ****/
+.btn-default {
+  border-radius: 1.5rem;
+}
+.btn-outline {
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+}
+.btn-outline-primary {
+  color: $color_primary;
+  background-color: transparent;
+  background-image: none;
+  border-color: $color_primary;
+    &:hover, &:focus {
+      color: #fff;
+      background-color: $color_primary;
+      border-color: $color_primary;
+    }
+}
+.btn-outline-white {
+  color: $color_primary;
+  background-color: #fff;
+  background-image: none;
+  border-color:  #fff;
+    &:hover, &:focus {
+      color: #fff;
+      background-color: transparent;
+      border-color: #fff;
+    }
+}
+.btn-default-lg {
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+}
+.btn .svg-inline--fa {
+  margin-left: 10px;
+}
+.btn-dark:hover, .btn:focus {
+  color: #fff;
+}
+.btn-dark:focus {
+  box-shadow: none;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+/**** title section ****/
+.title-section {
+  font-family: $font_secondary;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  padding-bottom: 5px;
+  position: relative;
+  &::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 5px;
+    background-color: $color_primary;
+  }
+}
+
+/**** description section ****/
+.desc-section {
+  padding: 1rem 0;
+}

@@ -1,0 +1,48 @@
+/**** hello ****/
+.wrap-hello {
+  // width: 50%;
+  height: 100vh;
+  // padding: 130px 90px 50px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  .hello {
+    width: 45%;
+      .hello-part1 {
+        fill: #000;
+      }
+      .hello-part2 {
+        fill: #000;
+      }
+      .hello-line {
+        fill: transparent;
+        stroke: $color_primary;
+      }
+      .hello-circle {
+        fill: $color_primary;
+      }
+      .hello-rect {
+        stroke: #000;
+      }
+      .info-hello {
+        color: #000;
+      }
+  }
+}
+
+/**** responsive ****/
+@include maxwidth(md) {
+  .wrap-hello {
+    // width: 100%;
+    background: transparent;
+  }
+  #hello-part1 {
+    padding-bottom: 50px;
+  }
+}
+@include maxwidth(xxs) {
+  .wrap-hello .hello {
+    width: 55%;
+  }
+}

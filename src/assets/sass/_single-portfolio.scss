@@ -1,0 +1,231 @@
+/*
+---------------
+ single-portfolio
+---------------
+*/
+
+/**** header ****/
+.header-single-portfolio {
+  background-color: $color_primary;
+  .title-header-single {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    .title-post-single {
+      color: #fff;
+      font-weight: 700;
+      font-family: $font_secondary;
+      text-transform: uppercase;
+      font-size: 2.2em;
+      margin-bottom: 2rem;
+      &::after {
+        content:'';
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+      }
+    }
+    .cat-post-single {
+      padding-right: 10px;
+      .svg-inline--fa {
+        margin-right: 5px;
+      }
+    }
+  }
+  .header-content {
+    background: #fff;
+  }
+  .wrap-img-single {
+    max-width: 850px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .img-single {
+    margin-top: -20%;
+  }
+}
+
+/**** shortcode ****/
+.img-txt {
+  display: flex;
+  max-height: 650px;
+  min-height: 450px;
+  &.inverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.full_block {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.cover-detail {
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cover-full-img {
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content-detail {
+  width: 50%;
+  padding: 90px;
+}
+
+.detail-title {
+  padding-bottom: 20px;
+  font-family: $font_secondary;
+  & h3 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+}
+
+.content-detail-project {
+  width: 100%;
+  padding: 90px 0;
+}
+
+
+.wrap-content-single .detail-txt {
+  padding: 0 15px;
+}
+
+.detail-txt{
+  padding-bottom: 50px;
+  & p {
+    font-size: 2.2em;
+    font-weight: 800;
+    line-height: 1.7em;
+    margin: 0;
+    font-family: $font_secondary;
+  }
+}
+
+.detail-txt-rea h4, .detail-txt-infos h4 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  &::after {
+    content:'';
+    margin-top: 10px;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #333;
+  }
+}
+
+.detail-txt-rea p {
+  margin-bottom: 0;
+}
+
+.content-tree-txt {
+  padding: 50px 0;
+}
+
+.block-tree-txt{
+font-size: 22px;
+margin: 0;
+font-family: $font_secondary;
+font-weight: 800;
+}
+
+
+.detail-txt-block {
+  & p {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    margin: 0;
+  }
+
+}
+
+.seperate {
+  margin: 0 auto;
+}
+
+.content-txt-project {
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.block-txt-title {
+  font-family: $font_secondary;
+  h2 {
+    font-weight: 900;
+    margin: 0;
+  }
+}
+
+.full-img-txt {
+  min-height: 450px;
+}
+
+.full-img-txt div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content-txt-full {
+  min-height: 450px;
+}
+
+.content-txt-full h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content-txt-full p {
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cover-left, .cover-right {
+  background-size: cover;
+  min-height: 450px;
+}
+
+.cover-left {
+    background-position: center center;
+}
+
+////////////nav meta post
+
+.nav-portfolio {
+
+}
+
+.screen-reader-text{
+  display: none;
+}
+
+
+.nav-previous, .nav-next {
+
+}
+
+
+
+.post-meta {
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.title_meta {
+  color: #333;
+  font-size: 15px;
+  text-align: right;
+}
