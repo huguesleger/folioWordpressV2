@@ -3,54 +3,31 @@
  portfolio
 ---------------
 */
-
-/***** header *****/
-.header-portfolio {
-  // height: 450px;
-  .header-img {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
-    .title-page-portfolio {
-      color: #fff;
-      height: 100%;
-      padding: 5rem;
-      display: flex;
-      flex-direction: column;
-        h1 {
-          text-transform: uppercase;
-          font-weight: 600;
-          margin: 0;
-            &::after {
-              content:'';
-              display: block;
-              margin-top: 5px;
-              width: 35px;
-              height: 5px;
-              background-color: $color_primary;
-            }
-        }
-        span {
-          padding-top: 15px;
-        }
-    }
-  }
-}
-
 .content-portfolio {
   padding-top: 4rem;
 }
 
 .works-content {
   padding: 4rem 0;
-  .work {
-  height: 290px;
-  overflow: hidden;
-  position: relative;
-  &.col-md-6 {
-    height: 450px;
+    .work {
+      height: 290px;
+      overflow: hidden;
+      position: relative;
+    }
+  .container-fluid {
+    .px-custom {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    .work {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
+  .container {
+    .work {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -117,7 +94,7 @@
 
 .effect-content {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 30px);
   top: 0;
   color: #fff;
   padding: 25px 15px 15px;

@@ -1,19 +1,32 @@
+/***** header *****/
 .header-page {
-  height: 490px;
-  overflow: hidden;
-  display: flex;
-    .header-txt {
-      width: 50%;
-      background-color: $color_primary;
-    }
-    .wrap-header-img {
-      width: 50%;
-      display: flex;
-      justify-content: flex-end;
-        .header-img {
-          width: 100%;
-          background-size: cover;
-          background-position: 0 15%;
+  height: 450px;
+.header-page-img {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 9rem 0;
+    .hero-page {
+      height: 100%;
+      color: #fff;
+      padding: 5rem 0;
+        h1 {
+          text-transform: uppercase;
+          font-weight: 600;
+            &::after {
+              content:'';
+              display: block;
+              margin-top: 5px;
+              width: 35px;
+              height: 5px;
+              background-color: $color_primary;
+            }
+        }
+        .baseline {
+          padding-top: 15px;
+          display: block
         }
     }
+}
 }

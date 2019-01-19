@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="works-content">
 <!-- <div class="container" id="folio_fullwidth"> -->
 <?php echo '<div class="'. $portfolio_class .'">'; ?>
-<div class="row no-gutters">
+<div class="row px-custom">
 <?php
 $query = new WP_query(array(
   'post_type'=>'portfolio',
