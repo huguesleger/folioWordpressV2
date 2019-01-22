@@ -66,13 +66,8 @@
           font-size: 1rem;
           padding-left: 10px;
           text-transform: uppercase;
-          &::after {
-            content:'';
-            display: block;
-            width: 35px;
-            height: 5px;
-            background-color: $color_primary;
-          }
+          border-left: 3px solid $color_primary;
+          margin-left: 10px;
         }
       }
     }

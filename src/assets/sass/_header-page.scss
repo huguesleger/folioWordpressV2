@@ -14,14 +14,8 @@
         h1 {
           text-transform: uppercase;
           font-weight: 600;
-            &::after {
-              content:'';
-              display: block;
-              margin-top: 5px;
-              width: 35px;
-              height: 5px;
-              background-color: $color_primary;
-            }
+          border-left: 3px solid $color_primary;
+          padding-left: 10px;
         }
         .baseline {
           padding-top: 15px;

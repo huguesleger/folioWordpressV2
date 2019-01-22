@@ -65,13 +65,13 @@
          <div class="detail-txt"><p style="color:'. $color .'">'.$txt.'</p></div>
  				<div class="row">
  				<div class="detail-txt-rea col-md-6">
- 				<h4 style="color:'. $color .'">Objectif</h4>
+ 				<h4 style="color:'. $color .'"><i class="fas fa-bullseye"></i> Objectif</h4>
  				<p style="color:'. $color .'">'.$txt_min.'</p>
  				</div>
  				<div class="detail-txt-infos col-md-4">
- 				<h4 style="color:'. $color .'">Infos</h4>
- 				<p style="color:'. $color .'">Année : '.$txt_annee.'</p>
- 				<p style="color:'. $color .'">Technologies : '.$txt_env.'</p>
+ 				<h4 style="color:'. $color .'"><i class="fas fa-info-circle"></i> Infos</h4>
+ 				<p style="color:'. $color .'"><i class="far fa-calendar-alt"></i> Année : '.$txt_annee.'</p>
+ 				<p style="color:'. $color .'"><i class="fas fa-code-branch"></i> Technologies : '.$txt_env.'</p>
  				</div>
  				</div>
          </div>

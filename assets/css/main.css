@@ -138,16 +138,8 @@ ul {
   margin-bottom: 1.5rem;
   padding-bottom: 5px;
   position: relative;
-}
-
-.title-section::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 35px;
-  height: 5px;
-  background-color: #face40;
+  border-left: 3px solid #face40;
+  padding-left: 10px;
 }
 
 /**** description section ****/
@@ -576,15 +568,8 @@ ul {
 .header-page .header-page-img .hero-page h1 {
   text-transform: uppercase;
   font-weight: 600;
-}
-
-.header-page .header-page-img .hero-page h1::after {
-  content: '';
-  display: block;
-  margin-top: 5px;
-  width: 35px;
-  height: 5px;
-  background-color: #face40;
+  border-left: 3px solid #face40;
+  padding-left: 10px;
 }
 
 .header-page .header-page-img .hero-page .baseline {
@@ -2375,14 +2360,8 @@ ul {
   font-size: 1rem;
   padding-left: 10px;
   text-transform: uppercase;
-}
-
-.section-post .content-txt .wrap-icon-post .icon-post .cat-post::after {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 5px;
-  background-color: #face40;
+  border-left: 3px solid #face40;
+  margin-left: 10px;
 }
 
 .section-post .content-txt .title-post {
@@ -2460,14 +2439,8 @@ ul {
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(0, 20px, 0);
           transform: translate3d(0, 20px, 0);
-}
-
-.effect-thumb h4::after {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 4px;
-  background-color: #fff;
+  border-left: 3px solid #fff;
+  padding-left: 10px;
 }
 
 .effect-thumb:hover {
@@ -2548,14 +2521,8 @@ ul {
   text-transform: uppercase;
   font-size: 2.2em;
   margin-bottom: 2rem;
-}
-
-.header-single-portfolio .title-header-single .title-post-single::after {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
+  border-left: 3px solid #fff;
+  padding-left: 10px;
 }
 
 .header-single-portfolio .title-header-single .cat-post-single {
@@ -2655,15 +2622,6 @@ ul {
 .detail-txt-rea h4, .detail-txt-infos h4 {
   padding-bottom: 10px;
   margin-bottom: 20px;
-}
-
-.detail-txt-rea h4::after, .detail-txt-infos h4::after {
-  content: '';
-  margin-top: 10px;
-  display: block;
-  width: 35px;
-  height: 3px;
-  background: #333;
 }
 
 .detail-txt-rea p {

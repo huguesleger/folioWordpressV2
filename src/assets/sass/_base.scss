@@ -105,15 +105,8 @@ ul {
   margin-bottom: 1.5rem;
   padding-bottom: 5px;
   position: relative;
-  &::before {
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 35px;
-    height: 5px;
-    background-color: $color_primary;
-  }
+  border-left: 3px solid $color_primary;
+  padding-left: 10px;
 }
 
 /**** description section ****/
