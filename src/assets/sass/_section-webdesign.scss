@@ -47,3 +47,8 @@
   margin-right: -15px;
 }
 }
+@include minmaxwidth(md, lg) {
+.section-webdesign .wrap-bottom .wrap-device .device-img {
+    margin: 3% 14% 18% 14%;
+}
+}

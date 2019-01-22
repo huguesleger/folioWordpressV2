@@ -72,7 +72,7 @@ function portfoliohl_header() {
     </div>
 </header>
 <?php
-/* header page*/
+/* header page min*/
 } elseif (is_page_template( 'page-templates/template-portfolio.php') || is_page_template('page-templates/template-contact.php' )) { ?>
     <header class="header-page">
       <div class="header-page-img" style="background-image: url(<?php echo esc_url($img_header_page)?>)">
@@ -100,7 +100,22 @@ function portfoliohl_header() {
  //   </div>
  // </header>
 } else {
-return null;
+  ?>
+<header class="header-about">
+  <div class="header-page-img" style="background-image: url(<?php echo esc_url($img_header_page)?>)">
+    <div class="container">
+      <div class="hero-page">
+        <h1><?php the_title() ?></h1>
+        <?php if (get_field('baiseline')): { ?>
+          <span class="baseline"><?php echo the_field('baiseline')?></span>
+          <?php
+        }
+        endif; ?>
+      </div>
+  </div>
+  </div>
+</header>
+<?php
 }
 }
 add_action( 'portfoliohl_after_header', 'portfoliohl_header', 9);

@@ -37,7 +37,7 @@
  				<div class="container '. $full .'">
  				<div class="img-txt '. $class .'"><div class="cover-detail" style="background-image: url(' . $img . ')"></div>
  				<div class="content-detail" style=" background-color:'. $background .'">
-         <div class="detail-title"><h3 style="color:'. $color .'">'.$title.'</h3></div>
+         <div class="detail-title"><h3 style="color:'. $color .'"><i class="far fa-image"></i> '.$title.'</h3></div>
          <div class="detail-txt-block"><p style="color:'. $color .'">'.$txt.'</p></div>
          </div>
  				</div>
