@@ -23,7 +23,7 @@ var imagemin     = require('gulp-imagemin'); // Image optimization.
 // Browsers you care about for autoprefixing.
 // Browserlist https        ://github.com/ai/browserslist
 var AUTOPREFIXER_BROWSERS = [
-  'last 2 versions'
+  'last 2 versions', 'IE 11'
 ];
 
 // Task 'style' : Transform SCSS to CSS, Minify CSS, Add Sourcemaps, Correct Line ending

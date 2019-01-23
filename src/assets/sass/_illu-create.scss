@@ -3,6 +3,9 @@
 // right: 100px;
 // top: 80px;
 // width: 60%;
+#createIllu {
+  min-height: 550px;
+}
 .cls-1, .cls-50, .cls-51 {
   fill: none;
 }
@@ -276,10 +279,11 @@
 	top: 0;
 	right: 0;
 	left: 0;
-
 	height: 100%;
 	animation: nuage 15s linear infinite;
+  -ms-animation: nuage 15s linear infinite;
 	animation-direction: reverse;
+  -ms-animation-direction: reverse;
 	z-index: 12;
 }
 
@@ -301,6 +305,42 @@
 	}
 }
 
+@-webkit-keyframes nuage {
+	0% {
+		transform: translateX(-1100px);
+	}
+}
+
+@-webkit-keyframes nuage2 {
+	0% {
+		transform: translateX(500px);
+	}
+}
+
+@-webkit-keyframes nuage3 {
+	0% {
+		transform: translateX(50px);
+	}
+}
+
+@-moz-keyframes nuage {
+	0% {
+		transform: translateX(-1100px);
+	}
+}
+
+@-moz-keyframes nuage2 {
+	0% {
+		transform: translateX(500px);
+	}
+}
+
+@-moz-keyframes nuage3 {
+	0% {
+		transform: translateX(50px);
+	}
+}
+
 
 .__cloud_1 {
   transform: translateX(300px);
@@ -309,16 +349,22 @@
   transform: translateX(838px);
   animation: nuage2 15s linear infinite;
   animation-direction: reverse;
+  -ms-animation: nuage2 15s linear infinite;
+  -ms-animation-direction: reverse;
 }
 
 .__cloud_3 {
   transform: translateX(888px);
   animation: nuage2 15s linear infinite;
   animation-direction: reverse;
+  -ms-animation: nuage2 15s linear infinite;
+  -ms-animation-direction: reverse;
 }
 
 .__cloud_4{
   transform: translateX(220px);
   animation: nuage3 15s linear infinite;
   animation-direction: reverse;
+  -ms-animation: nuage3 15s linear infinite;
+  -ms-animation-direction: reverse;
 }
