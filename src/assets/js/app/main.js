@@ -1,4 +1,5 @@
 var ShapeOverlays = (function () {
+    var elm = document.querySelector('.wrap-nav');
     function ShapeOverlays(elm) {
         this.elm = elm;
         this.path = elm.querySelectorAll('path');
@@ -27,13 +28,13 @@ var ShapeOverlays = (function () {
     };
     ShapeOverlays.prototype.open = function () {
         this.isOpened = true;
-        this.elm.classList.add('__is-open');
+        elm.classList.add('__is-open');
         this.timeStart = Date.now();
         this.renderLoop();
     };
     ShapeOverlays.prototype.close = function () {
         this.isOpened = false;
-        this.elm.classList.remove('__is-open');
+        elm.classList.remove('__is-open');
         this.timeStart = Date.now();
         this.renderLoop();
     };

@@ -153,6 +153,7 @@ ul {
   background: #fff;
   position: -webkit-sticky;
   position: sticky;
+  position: fixed;
   top: 0;
   z-index: 11;
 }
@@ -579,6 +580,7 @@ ul {
 
 .header-about {
   height: 590px;
+  position: relative;
 }
 
 .header-about::after {
@@ -588,11 +590,11 @@ ul {
   left: 0;
   right: 0;
   background-color: #fff;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  -webkit-transform-origin: 70%;
-          transform-origin: 70%;
-  height: 150px;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  height: 90px;
 }
 
 .header-about .header-page-img {
@@ -618,6 +620,16 @@ ul {
 .header-about .header-page-img .hero-page .baseline {
   padding-top: 15px;
   display: block;
+}
+
+.header-single-post {
+  height: 490px;
+}
+
+.header-single-post .header-page-img {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 /**** header home ****/

@@ -90,16 +90,7 @@ function portfoliohl_header() {
     </header>
 
 <?php
-/* header page */
- // <header class="header-page">
- //   <div class="header-txt">
- //     <h1>title</h1>
- //   </div>
- //   <div class="wrap-header-img">
- //     <div class="header-img" style="background-image: url()"></div>
- //   </div>
- // </header>
-} else {
+} elseif (is_page_template ('page-templates/template-about.php')) {
   ?>
 <header class="header-about">
   <div class="header-page-img" style="background-image: url(<?php echo esc_url($img_header_page)?>)">
@@ -116,6 +107,13 @@ function portfoliohl_header() {
   </div>
 </header>
 <?php
+} else {
+  ?>
+  <header class="header-single-post">
+    <div class="header-page-img" style="background-image: url(<?php echo esc_url($img_header_page)?>)">
+    </div>
+  </header>
+  <?php
 }
 }
 add_action( 'portfoliohl_after_header', 'portfoliohl_header', 9);
