@@ -26,8 +26,9 @@
 }
 
 .header-about {
-  height: 620px;
+  height: 690px;
   position: relative;
+  background-color: $color_primary;
   &::after {
     content: "";
     position: absolute;
@@ -41,17 +42,17 @@
   }
   .header-page-img{
       background-size: cover;
-      background-position: 0 22%;
+      background-position: center -20%;
       height: 100%;
       padding: 9rem 0;
       .hero-page {
         height: 100%;
-        color: #000;
+        color: #fff;
         padding: 5rem 0;
           h1 {
             text-transform: uppercase;
             font-weight: 600;
-            border-left: 3px solid $color_primary;
+            border-left: 3px solid #fff;
             padding-left: 10px;
           }
           .baseline {

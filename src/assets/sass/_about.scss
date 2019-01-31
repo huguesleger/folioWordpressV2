@@ -1,0 +1,31 @@
+
+/////cursus///////
+.section-cursus {
+  padding: 3rem 0;
+  .content-cursus {
+    padding: 2rem 4.5rem 4rem;
+    .number-cursus {
+      font-size: 8em;
+      font-family: $font_number;
+      font-weight: 900;
+      position: absolute;
+      color: #f3f3f3;
+      left: -28px;
+      transform:rotate(-90deg);
+    }
+    .formation {
+        font-weight: 900;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        position: relative;
+        font-size: 2.2em;
+        font-family: $font_secondary;
+        p {
+          margin-bottom: 0;
+        }
+        .formation-school {
+          color: $color_primary;
+        }
+    }
+  }
+}
