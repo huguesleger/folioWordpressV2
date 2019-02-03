@@ -8,6 +8,12 @@
   * Site title, logo and menu bar
   */
  function portfoliohl_header_bar() {
+ $facebook_url      = get_theme_mod( 'social_facebook_url' );
+ $facebook_icon      = get_theme_mod( 'social_facebook_icon' );
+ $linkedin_url      = get_theme_mod( 'social_linkedin_url' );
+ $linkedin_icon      = get_theme_mod( 'social_linkedin_icon' );
+ $instagram_url      = get_theme_mod( 'social_instagram_url' );
+ $instagram_icon      = get_theme_mod( 'social_instagram_icon' );
  ?>
 <div class="main">
   <div class="container-main">
@@ -26,8 +32,21 @@
       <div class="infos-nav">
         <h3 class="title-info">Infos</h3>
         <ul class="content-infos">
-          <li class="info-item"><i class="fas fa-map-marker-alt"></i><span>FRANCE/Montpellier</span></li>
-          <li class="info-item"><i class="fas fa-envelope-open"></i><a class="mail-menu" href="mailto:contactme@hl-developerz.com"><span>contactme@hl-developerz.com</span></a></li>
+          <li class="info-item"><i class="fas fa-map-marker-alt"></i><span>34000 Montpellier</span></li>
+          <li class="info-item"><a class="item" href="mailto:contactme@hl-developerz.com"><i class="fas fa-envelope-open"></i><span>contactme@hl-developerz.com</span></a></li>
+          <?php
+          if ( $facebook_url ) { ?>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $facebook_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $facebook_icon ); ?>"></i></a></li>
+          <?php
+          }
+          if ( $linkedin_url ) { ?>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $linkedin_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $linkedin_icon ); ?>"></i></a></li>
+          <?php
+          }
+          if ( $instagram_url ) { ?>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $instagram_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $instagram_icon ); ?>"></i></a></li>
+          <?php
+          } ?>
         </ul>
       </div>
     </div>

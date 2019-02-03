@@ -119,5 +119,159 @@ array(
     'section'     => 'section_cursus',
 )
 );
+}
+/* number
+----------------------------------------------------------------------*/
+$wp_customize->add_section(
+    'section_number',
+    array(
+        'title'         => __('Section chiffres', 'portfoliohl'),
+        'priority'      => 10,
+        'panel'         => 'portfoliohl_section_about_panel',
+    )
+);
 
+// Show section
+$wp_customize->add_setting( 'number_disable',
+    array(
+        'sanitize_callback' => 'portfoliohl_sanitize_checkbox',
+        'default'           => '',
+    )
+);
+$wp_customize->add_control( 'number_disable',
+    array(
+        'type'        => 'checkbox',
+        'label'       => esc_html__('cacher cette section ?', 'portfoliohl'),
+        'section'     => 'section_number',
+    )
+);
+
+for ($c = 1; $c <= 3; $c++) {
+  $wp_customize->add_control( new portfoliohl_Info( $wp_customize, 'number' . $c, array(
+      'label' => __('Chiffre ', 'portfoliohl') . $c,
+      'section' => 'section_number',
+      'settings' => array(),
+      'priority' => 10
+      ) )
+  );
+
+  //number
+  $wp_customize->add_setting(
+  'number_number'. $c,
+  array(
+      'default'           => '',
+      'sanitize_callback' => 'portfoliohl_sanitize_text',
+  )
+  );
+  $wp_customize->add_control(
+  'number_number'. $c,
+  array(
+      'type'        => 'text',
+      'label'       => esc_html__('Chiffre:', 'portfoliohl'),
+      'section'     => 'section_number',
+  )
+  );
+  //number type
+  $wp_customize->add_setting(
+  'number_type'. $c,
+  array(
+      'default'           => '',
+      'sanitize_callback' => 'portfoliohl_sanitize_text',
+  )
+  );
+  $wp_customize->add_control(
+  'number_type'. $c,
+  array(
+      'type'        => 'text',
+      'label'       => esc_html__('Type:', 'portfoliohl'),
+      'section'     => 'section_number',
+  )
+  );
+  //number description
+  $wp_customize->add_setting(
+  'number_desc'. $c,
+  array(
+      'default'           => '',
+      'sanitize_callback' => 'portfoliohl_sanitize_text',
+  )
+  );
+  $wp_customize->add_control(
+  'number_desc'. $c,
+  array(
+      'type'        => 'text',
+      'label'       => esc_html__('Description:', 'portfoliohl'),
+      'section'     => 'section_number',
+  )
+  );
+}
+/* outils
+----------------------------------------------------------------------*/
+$wp_customize->add_section(
+    'section_outils',
+    array(
+        'title'         => __('Section outils', 'portfoliohl'),
+        'priority'      => 10,
+        'panel'         => 'portfoliohl_section_about_panel',
+    )
+);
+
+// Show section
+$wp_customize->add_setting( 'outils_disable',
+    array(
+        'sanitize_callback' => 'portfoliohl_sanitize_checkbox',
+        'default'           => '',
+    )
+);
+$wp_customize->add_control( 'outils_disable',
+    array(
+        'type'        => 'checkbox',
+        'label'       => esc_html__('cacher cette section ?', 'portfoliohl'),
+        'section'     => 'section_outils',
+    )
+);
+/* outils conception
+----------------------------------------------------------------------*/
+for ($c = 1; $c <= 12; $c++) {
+  $wp_customize->add_control( new portfoliohl_Info( $wp_customize, 'outil' . $c, array(
+      'label' => __('outil', 'portfoliohl') . $c,
+      'section' => 'section_outils',
+      'settings' => array(),
+      'priority' => 10
+      ) )
+  );
+  //conception image
+  $wp_customize->add_setting(
+      'outil_image' . $c,
+      array(
+          'default'           => '',
+          'sanitize_callback' => 'esc_url_raw',
+      )
+  );
+  $wp_customize->add_control(
+      new WP_Customize_Image_Control(
+          $wp_customize,
+        'outil_image' . $c,
+          array(
+             'label'     => esc_html__( 'Upload image:', 'portfoliohl' ),
+             'type'      => 'image',
+             'section'   => 'section_outils',
+          )
+      )
+  );
+  //conception name
+  $wp_customize->add_setting(
+  'outil_name'. $c,
+  array(
+      'default'           => '',
+      'sanitize_callback' => 'portfoliohl_sanitize_text',
+  )
+  );
+  $wp_customize->add_control(
+  'outil_name'. $c,
+  array(
+      'type'        => 'text',
+      'label'       => esc_html__('Nom:', 'portfoliohl'),
+      'section'     => 'section_outils',
+  )
+  );
 }

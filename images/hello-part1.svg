@@ -1,0 +1,8 @@
+<svg id="hello-part1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+  <g id="letters-part1">
+    <path class="hello-part1 letter-h" stroke="none" d="M5.64,4.38h12V19H29V4.38H41V41H29V26.64H17.63V41h-12Z"/>
+    <path class="hello-part1 _E letter-e" stroke="none" d="M47.94,4.38H73.67v8.1H60.88v6.66H72.55v6.71H60.88v7.08H73.67V41H47.94Z"/>
+    <path class="hello-part1 _L letter-l" stroke="none" d="M79.64,4.38H91.14V32.93h12.73V41H79.64Z"/>
+  </g>
+  <path class="hello-line" d="M1.25,41.52l0-40.27H41.56"/>
+</svg>

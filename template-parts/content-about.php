@@ -16,7 +16,9 @@
       $sections = apply_filters (
         'portfoliohl_frontpage_sections_order',
         array(
-              'cursus'
+              'cursus',
+              'number',
+              'outils'
                 )
       );
 

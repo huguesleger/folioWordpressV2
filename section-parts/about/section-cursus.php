@@ -11,6 +11,11 @@
  <section class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'cursus' ) ); ?>">
 
 <div class="container">
+  <div class="row">
+    <div class="title-cursus col-md-12">
+      <h2>Parcours</h2>
+    </div>
+  </div>
   <?php
    for ($c = 1; $c <= 3; $c++) {
     $cursus_formation_year    = get_theme_mod( 'cursus_formation_year'. $c );

@@ -46,6 +46,9 @@
   // Load custom about
   require get_template_directory() . '/inc/customizer/customizer-about.php';
 
+  // Load social
+  require get_template_directory() . '/inc/customizer/customizer-social.php';
+
   // Load sanitize
   require get_template_directory() . '/inc/customizer/sanitize.php';
 

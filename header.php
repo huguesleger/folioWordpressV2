@@ -23,7 +23,7 @@
 
   <div class="phone-orientation">
     <div class="phone-content">
-      <?php echo file_get_contents( get_stylesheet_directory_uri() . '/assets/img/smartphone.svg' ); ?>
+      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/smartphone.svg">
       <p>pour une meilleure experience, retournez votre smartphone en mode portrait.</p>
     </div>
   </div>

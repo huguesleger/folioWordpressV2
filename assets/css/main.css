@@ -38,9 +38,13 @@ ul {
   right: 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .home .main.__bg-color {
+  -webkit-box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
+          box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
   background-color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -157,6 +161,8 @@ ul {
   position: fixed;
   top: 0;
   z-index: 11;
+  -webkit-box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
+          box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
 }
 
 .main .container-main {
@@ -298,11 +304,11 @@ ul {
 
 .nav-txt {
   color: #000;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg) translateX(20%);
+          transform: rotate(-90deg) translateX(20%);
   position: absolute;
   left: 5px;
-  top: 33px;
+  top: 50%;
   font-size: 12px;
 }
 
@@ -446,12 +452,18 @@ ul {
   padding-left: 10px;
 }
 
-.infos-nav .info-item .mail-menu {
+.infos-nav .info-item-social {
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.infos-nav .info-item .item, .infos-nav .info-item-social .item {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-.infos-nav .info-item .mail-menu:hover {
+.infos-nav .info-item .item:hover, .infos-nav .info-item-social .item:hover {
   color: #face40;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -580,6 +592,7 @@ ul {
   font-weight: 600;
   border-left: 3px solid #face40;
   padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header-page .header-page-img .hero-page .baseline {
@@ -2800,12 +2813,18 @@ ul {
   text-align: right;
 }
 
+/**** cursus ****/
 .section-cursus {
   padding: 3rem 0;
 }
 
+.section-cursus .title-cursus h2 {
+  padding-left: 10px;
+  border-left: 3px solid #face40;
+}
+
 .section-cursus .content-cursus {
-  padding: 2rem 4.5rem 4rem;
+  padding: 1rem 4.5rem 1rem;
 }
 
 .section-cursus .content-cursus .number-cursus {
@@ -2834,6 +2853,287 @@ ul {
 
 .section-cursus .content-cursus .formation .formation-school {
   color: #face40;
+}
+
+/**** number ****/
+.section-number {
+  background-color: #face40;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.section-number .content-number {
+  color: #fff;
+  text-align: center;
+}
+
+.section-number .content-number p {
+  margin-bottom: 0;
+}
+
+.section-number .number {
+  font-size: 4rem;
+  font-family: "Archivo Black", sans-serif;
+  line-height: 1;
+}
+
+.section-number .number-type {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/**** outils ****/
+.section-outils {
+  padding: 3rem 0;
+}
+
+.section-outils .title-outil {
+  padding-bottom: 2rem;
+}
+
+.section-outils .title-outil h2 {
+  padding-left: 10px;
+  border-left: 3px solid #face40;
+}
+
+.section-outils .content-outil {
+  text-align: center;
+  border: 1px solid #efefef;
+}
+
+.section-outils .content-outil .outil-name {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+/***** contact *****/
+.contact .content-infos {
+  background-color: #face40;
+  color: #fff;
+}
+
+.contact .content-infos .title-list {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border-left: 3px solid #fff;
+  padding-left: 10px;
+}
+
+.contact .content-infos .content-list-contact .icon-list {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.contact .content-infos .content-list-contact .email {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact .content-infos .content-list-contact .email:hover {
+  color: #333;
+}
+
+.contact .content-infos .social-list {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #fff;
+  font-size: 1.2rem;
+  width: 35px;
+  line-height: 1.6;
+  text-align: center;
+  height: 35px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact .content-infos .social-list .link-social {
+  color: #face40;
+  vertical-align: middle;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact .content-infos .social-list:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.contact .content-infos .social-list:hover .link-social {
+  color: #fff;
+}
+
+/***** form *****/
+.title-form {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  border-left: 3px solid #face40;
+  padding-left: 10px;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #face40;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.has-error .form-control {
+  border: 1px solid #ff5252;
+}
+
+.help-block {
+  background-color: #ff5252;
+  color: #fff;
+  display: block;
+  padding: 5px;
+  font-size: .8rem;
+  position: relative;
+}
+
+.help-block::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #ff5252 transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+.wpcf7-response-output {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  position: fixed;
+}
+
+.wpcf7-response-output.alert-warning.hide {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.wpcf7-response-output.alert-warning.hide.destroy {
+  display: none !important;
+}
+
+.wpcf7-response-output.alert-success.hide {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.wpcf7-response-output.alert-success.hide.destroy {
+  display: none !important;
+}
+
+.contact-form .alert-warning {
+  color: #fff;
+  background: #ff5252;
+  border-color: transparent;
+}
+
+.contact-form .alert-success {
+  color: #fff;
+  background: #1acc63;
+  border-color: transparent;
+}
+
+.btn-submit .btn-primary {
+  background: #face40;
+  border: 1px solid #face40;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 20px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-submit .btn-primary:hover {
+  background: transparent;
+  color: #face40;
+}
+
+.btn-submit .btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-submit .btn-primary:not(:disabled):not(.disabled):active {
+  background: #face40;
+  border: 1px solid #face40;
+}
+
+.btn-submit .btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #efefef;
+}
+
+.footer .copy {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.footer .copy .logo-footer {
+  width: 25px;
+  height: 25px;
+  vertical-align: -5px;
+  margin-right: 8px;
+}
+
+.footer .gotop {
+  background-color: #face40;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 991px) and (max-height: 415px) and (orientation: landscape) {
+  .footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
