@@ -17,8 +17,8 @@ do_action('portfoliohl_frontpage_before_section_parts');
     $sections = apply_filters(
         'portfoliohl_frontpage_sections_order',
         array(
-              'create',
               'design',
+              'create',
               'slider',
               'service',
               'webdesign',

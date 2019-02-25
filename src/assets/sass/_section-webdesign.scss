@@ -5,13 +5,13 @@
 */
 .section-webdesign {
   .wrap-top {
-    background-color: $color_primary;
+    background: $gradient_primary;
     overflow: hidden;
     .wrap-webdesign {
       display: flex;
       .webdesign-block-txt {
         padding: 3rem;
-        background-color: #fff;
+        background: #fff;
       }
       .content-parallax {
         max-height: 650px;
@@ -19,7 +19,7 @@
     }
   }
   .wrap-bottom {
-    background-color: $color_grey_light;
+    background: $color_grey_light;
     .wrap-device {
       position: relative;
       margin: 0 auto;
@@ -47,6 +47,19 @@
   margin-right: -15px;
 }
 }
+@include maxwidth(sm) {
+  .section-webdesign {
+    padding-top: 0 !important;
+  }
+.section-webdesign .wrap-top .wrap-webdesign .webdesign-block-txt {
+  padding: 15px;
+  padding-bottom: 50px;
+}
+.content-parallax {
+  overflow: hidden;
+}
+}
+
 @include minmaxwidth(md, lg) {
 .section-webdesign .wrap-bottom .wrap-device .device-img {
     margin: 3% 14% 18% 14%;

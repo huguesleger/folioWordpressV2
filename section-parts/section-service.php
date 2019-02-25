@@ -61,7 +61,7 @@ $query = new WP_query(array(
       ?>
         <div class="row">
         <?php while($query->have_posts()): $query->the_post(); global $post; ?>
-        <div class="accordion col-6" id="accordionService<?php the_ID(); ?>">
+        <div class="accordion col-md-6 mb-3" id="accordionService<?php the_ID(); ?>">
           <div class="card">
             <div class="card-header" id="heading<?php the_ID(); ?>">
               <div class="title-collapse">
@@ -98,7 +98,7 @@ $query = new WP_query(array(
           ?>
             <div class="row">
             <?php while($query->have_posts()): $query->the_post(); global $post; ?>
-            <div class="accordion col-6" id="accordionService<?php the_ID(); ?>">
+            <div class="accordion col-md-6 mb-3" id="accordionService<?php the_ID(); ?>">
               <div class="card">
                 <div class="card-header" id="heading<?php the_ID(); ?>">
                   <div class="title-collapse">

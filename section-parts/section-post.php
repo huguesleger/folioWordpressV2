@@ -12,14 +12,20 @@ $query = new WP_query(array(
   'posts_per_page'=>3,
   'order' => 'DESC',
   ));
+$section_post_title = get_theme_mod('section_post_title');
+$section_post_description = get_theme_mod('section_post_description');
 ?>
 <section id="post" class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'post' ) ); ?> pt-5">
   <div class="container">
     <div class="block-txt-post">
-      <h3 class="title-section">Derniers projets</h3>
+      <h3 class="title-section"><?php echo esc_html($section_post_title);?></h3>
+      <?php if ( $section_post_description ) { ?>
       <div class="desc-section">
-        <p>description</p>
-      </div>
+        <p><?php echo esc_html($section_post_description);?></p>
+    </div>
+    <?php
+  }
+  ?>
     </div>
   </div>
   <?php while($query->have_posts()): $query->the_post(); global $post; ?>

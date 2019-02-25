@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  // background: #fff;
   .hello {
     width: 45%;
       .hello-part1 {
@@ -28,21 +28,5 @@
       .info-hello {
         color: #000;
       }
-  }
-}
-
-/**** responsive ****/
-@include maxwidth(md) {
-  .wrap-hello {
-    // width: 100%;
-    background: transparent;
-  }
-  #hello-part1 {
-    padding-bottom: 50px;
-  }
-}
-@include maxwidth(xxs) {
-  .wrap-hello .hello {
-    width: 55%;
   }
 }

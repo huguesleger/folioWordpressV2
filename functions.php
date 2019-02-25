@@ -19,7 +19,8 @@ if( ! function_exists('portfoliohl_setup')) :
     * menu par default wordpress
     */
     register_nav_menus( array(
-      'primary' => esc_html__('Primary','portfoliohl')
+      'primary' => esc_html__('Primary','portfoliohl'),
+      'footer'  => esc_html__( 'Footer', 'portfoliohl' ),
     ));
 
 
@@ -108,7 +109,7 @@ add_action( 'wp_enqueue_scripts', 'portfoliohl_scripts');
 // Load scripts on home page ONLY
 
 function jquery_only_home() {
-	if (is_page('home' ) )	{ // permet de charger les scripts jquery ci-dessous UNIQUEMENT sur la HOME page
+	if (is_page('home' ) )	{
 wp_enqueue_script( 'portfoliohl-anim', get_template_directory_uri() . '/assets/js/anime.min.js', array('jquery'), '', true );
 wp_enqueue_script( 'portfoliohl-parallax', get_template_directory_uri() . '/assets/js/parallax.min.js', array('jquery'), '', true );
 wp_enqueue_script( 'portfoliohl-apphome.js', get_template_directory_uri() . '/assets/js/app-home.js', array('jquery'), '', true );
@@ -134,6 +135,11 @@ if ( !function_exists('portfoliohl_customizer_defaults') ) :
 function portfoliohl_customizer_defaults() {
 	$defaults = array(
 
+    //couleur theme
+    'color_primary'               => '#64C9FE',
+    'color_secondary'             => '#3f4c94',
+    'color_nav'                   => '#3f4c94',
+    'color_logo'                  => '#000',
     //section slider
     'slider_speed'			          => '7000',
     'slider_class'                => 'container-fluid',
@@ -142,7 +148,6 @@ function portfoliohl_customizer_defaults() {
     'slider_img_3'                => get_template_directory_uri() . '/assets/img/slider_3.jpg',
     //section service
     'service_style_icon'          => 'icon-square',
-    'service_color_icon'          => '#efefef',
     'service_class'               => 'style-inline',
     //webdesign
     'webdesign_parallax_speed'    =>  '1.85',
@@ -194,7 +199,7 @@ require get_template_directory() . '/inc/shortcode/shortcode.php';
  * Customizer
  */
 require get_template_directory() . '/inc/customizer/customizer.php';
-
+require get_template_directory() . '/inc/styles.php';
 
 
 // require get_template_directory() . '/inc/about.php';

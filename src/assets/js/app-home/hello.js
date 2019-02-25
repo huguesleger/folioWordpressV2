@@ -5,10 +5,6 @@ var helloAnimation = function() {
 
   var lettersUp = anime({
     targets: '#letters-part1 path',
-    opacity: {
-    value: 1,
-    duration: 100
-},
     strokeDashoffset: {
       duration: 800,
       easing: 'easeOutQuad'
@@ -26,19 +22,11 @@ var helloAnimation = function() {
     easing: 'easeInOutCubic',
     duration: 1500,
     delay: lettersUp.duration -1500,
-    opacity: {
-      value: 1,
-      duration: 100
- },
     offset: 0
   });
 
   var lettersDown = anime({
     targets: '#letters-part2 path',
-    opacity: {
-      value: 1,
-      duration: 100
-},
     strokeDashoffset: {
       duration: 800,
       easing: 'easeOutQuad'
@@ -52,10 +40,6 @@ var helloAnimation = function() {
 
   var circle = anime ({
     targets: '#circle path',
-    opacity: {
-      value: 1,
-      duration: 100
-},
     strokeDashoffset: {
       duration: 800,
       easing: 'easeOutQuad'

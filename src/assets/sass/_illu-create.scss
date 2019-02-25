@@ -3,20 +3,18 @@
 // right: 100px;
 // top: 80px;
 // width: 60%;
-#createIllu {
-  min-height: 550px;
-}
 .cls-1, .cls-50, .cls-51 {
   fill: none;
 }
 
 .cls-2 {
-  fill: $color_red;
+  fill: #6B86EB;
 }
 
 .cls-3 {
   fill: #600094;
 }
+
 
 .cls-4 {
   fill: #932288;
@@ -164,7 +162,7 @@
 }
 
 .cls-40 {
-  fill: #592875;
+  fill: #4a2f79;
 }
 
 .cls-41 {
@@ -172,7 +170,7 @@
 }
 
 .cls-42 {
-  fill: #f2d679;
+  fill: $color_primary;
 }
 
 .cls-43 {
@@ -184,7 +182,7 @@
 }
 
 .cls-45 {
-  fill: #ddbb5e;
+  fill: #9e133e;
 }
 
 .cls-46 {
@@ -200,7 +198,7 @@
 }
 
 .cls-49 {
-  fill: #f2ac57;
+  fill: #cabb7e;
 }
 
 .cls-50, .cls-51 {
@@ -214,7 +212,7 @@
 }
 
 .cls-52 {
-  fill: $color_red;
+  fill: #6B86EB;
 }
 
 .cls-53 {
@@ -230,7 +228,10 @@
 }
 
 .cls-56 {
-  fill: $color_red;
+  fill: #276D98;
+}
+.cls-57 {
+  fill: #3DB1CF;
 }
 }
 
@@ -304,43 +305,6 @@
 		transform: translateX(50px);
 	}
 }
-
-@-webkit-keyframes nuage {
-	0% {
-		transform: translateX(-1100px);
-	}
-}
-
-@-webkit-keyframes nuage2 {
-	0% {
-		transform: translateX(500px);
-	}
-}
-
-@-webkit-keyframes nuage3 {
-	0% {
-		transform: translateX(50px);
-	}
-}
-
-@-moz-keyframes nuage {
-	0% {
-		transform: translateX(-1100px);
-	}
-}
-
-@-moz-keyframes nuage2 {
-	0% {
-		transform: translateX(500px);
-	}
-}
-
-@-moz-keyframes nuage3 {
-	0% {
-		transform: translateX(50px);
-	}
-}
-
 
 .__cloud_1 {
   transform: translateX(300px);

@@ -41,6 +41,23 @@ $wp_customize->add_control( 'cursus_disable',
     )
 );
 
+//cursus title
+$wp_customize->add_setting(
+'cursus_title',
+array(
+    'default'           => '',
+    'sanitize_callback' => 'portfoliohl_sanitize_text',
+)
+);
+$wp_customize->add_control(
+'cursus_title',
+array(
+    'type'        => 'text',
+    'label'       => esc_html__('Titre:', 'portfoliohl'),
+    'section'     => 'section_cursus',
+)
+);
+
 for ($c = 1; $c <= 3; $c++) {
 
 $wp_customize->add_control( new portfoliohl_Info( $wp_customize, 'cursus' . $c, array(
@@ -50,7 +67,6 @@ $wp_customize->add_control( new portfoliohl_Info( $wp_customize, 'cursus' . $c, 
     'priority' => 10
     ) )
 );
-
 
 //cursus année
 $wp_customize->add_setting(
@@ -229,6 +245,24 @@ $wp_customize->add_control( 'outils_disable',
         'section'     => 'section_outils',
     )
 );
+
+//cursus title
+$wp_customize->add_setting(
+'outils_title',
+array(
+    'default'           => '',
+    'sanitize_callback' => 'portfoliohl_sanitize_text',
+)
+);
+$wp_customize->add_control(
+'outils_title',
+array(
+    'type'        => 'text',
+    'label'       => esc_html__('Titre:', 'portfoliohl'),
+    'section'     => 'section_outils',
+)
+);
+
 /* outils conception
 ----------------------------------------------------------------------*/
 for ($c = 1; $c <= 12; $c++) {

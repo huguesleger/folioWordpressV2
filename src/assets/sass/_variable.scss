@@ -2,18 +2,29 @@ $color_red: #ff5252;
 $color_purple: #8b56b2;
 $color_purple_dark: #453571;
 $color_yellow: #face40;
+$color_red_flash: #ff2147;
 $color_fig: #3f4253;
-$color_blue_light: #7fadc5;
+$color_blue_light: #65bcfa;
+$color_blue: #0c93f2;
+$color_blue_purple: #4a39cc;
 $color_blue_dark: #415ba5;
-$color_blue_flash: #98e6f4;
-$color_blue_green: #c9ead9;
+$color_blue_flash: #0dbabb;
+$color_blue_green: #1df1ad;
 $color_green: #94bb5d;
+$color_green_flash: #49f28d;
 $color_dark: #1b2028;
 $color_grey_light: #efefef;
 $color_grey_dark: #bcbcbc;
+$color_flashy: #3f4c94;
+$color_finaly: #64C9FE;
+$gradient_primary: linear-gradient(60deg, #63cdff, #7909c8);
+$gradient_flashy: linear-gradient(130deg, #ff5252, #470f55);
+$gradient_purple: linear-gradient(135deg, #f20f40, #2e1634);
+$gradient_primary_rgba: linear-gradient(135deg, rgba(99, 205, 255, 0.50) 0%, rgba(121, 9, 200, 0.50) 100%);
 
 
-$color_primary: $color_yellow;
+$color_primary: $color_finaly;
+$color_secondary: $color_flashy;
 $color_header: $color_purple_dark;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');

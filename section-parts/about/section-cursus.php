@@ -7,13 +7,14 @@
  ?>
  <?php
   $classes = 'section-cursus';
+  $cursus_title    = get_theme_mod( 'cursus_title' );
    ?>
  <section class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'cursus' ) ); ?>">
 
 <div class="container">
   <div class="row">
     <div class="title-cursus col-md-12">
-      <h2>Parcours</h2>
+      <h2><?php echo esc_html($cursus_title); ?></h2>
     </div>
   </div>
   <?php
@@ -38,7 +39,7 @@
                 </div>
            <div class="formation">
              <p><?php echo esc_html($cursus_formation_year); ?></p>
-             <p><?php echo esc_html($cursus_formation_title); ?><span class="formation-school pl-2"><?php echo esc_html($cursus_formation_school); ?></span></p>
+             <p><?php echo esc_html($cursus_formation_title); ?><span class="formation-school pl-md-2"><?php echo esc_html($cursus_formation_school); ?></span></p>
            </div>
            <div class="description">
              <p><?php echo esc_html($cursus_formation_description); ?></p>

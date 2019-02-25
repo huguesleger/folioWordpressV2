@@ -4,8 +4,15 @@
   flex-wrap: wrap;
   position: relative;
   height: 100vh;
-  background-color: $color_header;
+  background: $color_header;
   overflow: hidden;
+  &.header-bg {
+    background-color: #fff;
+    background-image: url('../../assets/img/bg-header-2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 /**** texte metier ****/
@@ -75,7 +82,7 @@
       left: -42px;
       top: 45%;
       color: $color_yellow;
-      background-color: $color_header;
+      background: $color_header;
       padding: 25px;
       border-radius: 50%;
       font-size: 60px;
@@ -94,21 +101,28 @@
 
 /**** btn header ****/
 .btn-hello {
-  position: absolute;
-  bottom: 25px;
-  left: 35px;
-  background-color: $color_header;
+  // position: absolute;
+  // bottom: 25px;
+  // left: 35px;
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+  background: $color_primary;
   color: #fff;
   transition: 0.2s ease-in-out;
+  .fa-play {
+    vertical-align: 0;
+  }
     &.__cliked {
-      background-color: $color_grey_light;
+      background: $color_grey_light;
       pointer-events: none;
       transition: 0.2s ease-in-out;
     }
 }
 .btn-close {
+  margin: 10px auto;
   color: $color_header;
-  background-color: $color_primary;
+  background: $color_primary;
 }
 
 /**** texte presentation ****/
@@ -119,9 +133,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin-left: 90px;
-  margin-right: 90px;
   transition: transform 0.8s;
+  text-align: center;
     h2 {
       font-family: $font_secondary;
       font-weight: 700;
@@ -191,7 +204,7 @@
   .phone-orientation {
     width: 100%;
     height: 100vh;
-    background-color: $color_header;
+    background: $gradient_primary;
     display: flex;
     justify-content: center;
     align-items: center;

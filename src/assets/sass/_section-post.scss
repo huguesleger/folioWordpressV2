@@ -4,32 +4,18 @@
 ---------------
 */
 .section-post {
-  background-color: #fff;
+  background: #fff;
   .block-txt-post {
     padding-left: 0;
     padding-right: 0;
   }
   .wrap-post {
-    // position: relative;
-    // &::before {
-    //   content:'';
-    //   position: absolute;
-    //   width: 25vw;
-    //   right: 0;
-    //   top: 0;
-    //   bottom: 0;
-    //   background-color: $color_primary;
-    // }
-    // .row.reverse {
-    //   flex-direction: row-reverse;
-    // }
-
     .row {
       position: relative;
-      box-shadow: 980px 0px 0px 0px $color_primary;
+      box-shadow: 980px 0px 0px 0px $color_grey_light;
     }
     .content-img {
-      background-image: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, $color_primary 0%);
+      background-image: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, $color_grey_light 0%);
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
@@ -38,29 +24,21 @@
     }
     &:nth-child(2n+1) .row {
       flex-direction: row-reverse;
-      box-shadow: -980px 0px 0px 0px $color_primary;
+      box-shadow: -980px 0px 0px 0px $color_grey_light;
     }
     &:nth-child(2n+1) .content-img {
-      background-image: linear-gradient(90deg, $color_primary 50%, rgba(255, 255, 255, 0) 0%);
+      background-image: linear-gradient(90deg, $color_grey_light 50%, rgba(255, 255, 255, 0) 0%);
     }
   }
-  // .wrap-post.reverse {
-  //   &::before {
-  //     left: 0;
-  //   }
-  //   .content-img.reverse {
-  //     background-image: linear-gradient(90deg, $color_primary 50%, rgba(255, 255, 255, 0) 0%);
-  //   }
-  // }
   .content-txt {
-    padding: 5rem;
-    background-color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background: #fff;
     .wrap-icon-post {
       font-size: 3rem;
       margin-bottom: 2.5rem;
       display: flex;
       .icon-post {
-        display: flex;
         padding-right: 15px;
         .cat-post {
           font-size: 1rem;
@@ -84,3 +62,32 @@
     }
   }
 }
+@include minmaxwidth(md, lg) {
+.section-post .wrap-post .row {
+      box-shadow: 955px 0px 0px 0px $color_grey_light;
+}
+.section-post .wrap-post:nth-child(2n+1) .row {
+      flex-direction: row-reverse;
+      box-shadow: -955px 0px 0px 0px $color_grey_light;
+    }
+}
+@include minmaxwidth(sm, md) {
+  .section-post .content-txt {
+      padding-top: 15px;
+  }
+}
+
+@include maxwidth(sm) {
+  .section-post {
+    padding-top: 0 !important;
+  }
+  .section-post .content-txt {
+      padding-top: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+.section-post .content-txt .wrap-icon-post {
+  display: block;
+}
+ }

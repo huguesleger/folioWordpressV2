@@ -1,8 +1,27 @@
 /***** contact *****/
 .contact {
   .content-infos {
-    background-color: $color_primary;
+    background: $gradient_primary;
     color: #fff;
+    &::before {
+      content:"";
+      background-size: cover;
+      background-image: url('../../assets/img/map.png');
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.10;
+    }
+    .infos-contact {
+      position: relative;
+      z-index: 1;
+    }
+    .social-contact {
+      position: relative;
+      z-index: 1;
+    }
     .title-list {
       font-weight: 700;
       font-family: $font_secondary;
@@ -29,13 +48,14 @@
       text-align: center;
       height: 35px;
       transition: 0.3s ease-in-out;
+      margin-right: 15px;
       .link-social {
-        color: $color_primary;
+        color: $color_secondary;
         vertical-align: middle;
         transition: 0.3s ease-in-out;
       }
       &:hover {
-        background-color: transparent;
+        background: transparent;
         border: 1px solid #fff;
          .link-social {
            color: #fff;
@@ -60,7 +80,7 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0;
@@ -75,7 +95,7 @@
   border: 1px solid $color_red;
 }
 .help-block {
-  background-color: $color_red;
+  background: $color_red;
   color: #fff;
   display: block;
   padding: 5px;
@@ -103,6 +123,7 @@ textarea {
   right: 0;
   border-radius: 0;
   position: fixed;
+  z-index: 10;
   &.alert-warning.hide {
     opacity: 0;
     transition: 0.3s ease-in-out;

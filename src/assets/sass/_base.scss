@@ -20,7 +20,7 @@ ul {
 
 /**** home main ****/
 .home .main {
-  background-color: transparent;
+  background: transparent;
   position: fixed;
   left: 0;
   right: 0;
@@ -28,12 +28,16 @@ ul {
   box-shadow: none;
     &.__bg-color {
       box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
-      background-color: #fff;
+      background: #fff;
       transition: 0.3s ease-in-out;
-
     }
 }
-
+.home .main #logo {
+  fill: #000;
+}
+.home .main.__bg-color #logo {
+  fill: $color_secondary;
+}
 /**** btn-round ****/
 .btn-round-xs {
   width: 30px;
@@ -51,9 +55,21 @@ ul {
   cursor: pointer;
 }
 
+
 /**** btn ****/
 .btn-default {
   border-radius: 1.5rem;
+}
+.btn-default-primary {
+  background: $color_primary;
+  border: 2px solid $color_primary;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  &:hover, &:focus {
+    color: $color_primary;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 .btn-outline {
   border: 2px solid transparent;
@@ -61,23 +77,23 @@ ul {
 }
 .btn-outline-primary {
   color: $color_primary;
-  background-color: transparent;
+  background: transparent;
   background-image: none;
   border-color: $color_primary;
     &:hover, &:focus {
       color: #fff;
-      background-color: $color_primary;
+      background: $color_primary;
       border-color: $color_primary;
     }
 }
 .btn-outline-white {
   color: $color_primary;
-  background-color: #fff;
+  background: #fff;
   background-image: none;
   border-color:  #fff;
     &:hover, &:focus {
       color: #fff;
-      background-color: transparent;
+      background: transparent;
       border-color: #fff;
     }
 }
@@ -89,13 +105,23 @@ ul {
 .btn .svg-inline--fa {
   margin-left: 10px;
 }
-.btn-dark:hover, .btn:focus {
+.btn-dark:hover, .btn-dark:focus {
   color: #fff;
 }
 .btn-dark:focus {
   box-shadow: none;
 }
 .btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  background: $color_primary;
+  border-color: $color_primary;
+}
+.btn-outline-primary:focus, .btn-outline-primary.focus{
+  box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: none;
 }
 
@@ -110,8 +136,23 @@ ul {
   border-left: 3px solid $color_primary;
   padding-left: 10px;
 }
+.title-inline {
+  display: inline-block;
+}
 
 /**** description section ****/
 .desc-section {
   padding: 1rem 0;
+}
+
+.animated-slow {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.animated-slow.infinite {
+    animation-iteration-count: infinite;
+}
+
+.delay-2s {
+  animation-delay: 2s;
 }

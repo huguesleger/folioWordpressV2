@@ -21,7 +21,7 @@
                   width: 36px;
                   display: inline-block;
                   text-align: center;
-                  background-color: $color_primary;
+                  background: $color_primary;
                   color: #fff;
                   margin-right: 10px;
                 }
@@ -39,6 +39,15 @@
           right: 0;
           margin: 4% 4% 28% 4%;
           overflow: hidden;
+          background: #101010;
+          .whale {
+            right: -10px;
+            width: 78%;
+            float: right;
+          }
+          .logo-white #logo {
+            fill: #fff;
+          }
        }
      }
     }

@@ -27,15 +27,6 @@
       .logo {
         width: 45px;
         display: inline-block;
-          svg{
-          vertical-align: middle;
-          transition: 0.3s ease-in-out;
-          fill: #000;
-            // &.__logo-white {
-            //   fill: #fff;
-            //   transition: 0.3s ease-in-out;
-            // }
-          }
       }
       .title {
         color: #000;
@@ -44,12 +35,13 @@
         margin: 0;
         text-transform: capitalize;
         transition: 0.3s ease-in-out;
-          // &.__title-white {
-          //   color: #fff;
-          //   transition: 0.3s ease-in-out;
-          // }
       }
     }
+  }
+  #logo{
+  vertical-align: middle;
+  transition: 0.3s ease-in-out;
+  fill: $color_secondary;
   }
 }
 
@@ -69,7 +61,7 @@
     right: 0;
     width: 30px;
     height: 2px;
-    background-color: #000;
+    background: #000;
       &::before, &::after {
         content:'';
         display: block;
@@ -78,7 +70,7 @@
         left: 0;
         width: 30px;
         height: 2px;
-        background-color: #000;
+        background: #000;
         transform: translateY(-8px);
         transition: transform 0.3s;
       }
@@ -207,7 +199,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  fill: #000;
+  fill: $color_secondary;
     &.__is-open {
       pointer-events: auto;
     }
@@ -280,7 +272,7 @@
 @include maxwidth(xs) {
   .wrap-nav {
     width: 100%;
-    padding: 130px 30px 50px 30px;
+    padding: 85px 30px 50px 30px;
       .menu {
         font-size: 25px;
           .menu-item {

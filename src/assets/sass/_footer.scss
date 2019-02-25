@@ -1,18 +1,21 @@
 .footer {
-  padding: 1rem 0;
-  background-color: $color_grey_light;
+  .wrap-copy {
+    padding: 2rem 0;
+    background: $color_secondary;
+  }
   .copy {
-    font-size: 13px;
     margin-bottom: 0;
+    color: #fff;
     .logo-footer {
       width: 25px;
       height: 25px;
       vertical-align: -5px;
       margin-right: 8px;
+      fill: #fff;
     }
 }
 .gotop {
-  background-color: $color_primary;
+  background: $color_primary;
   padding: 5px;
   width: 30px;
   height: 30px;
@@ -20,8 +23,16 @@
   color: #fff;
   font-size: 15px;
   line-height: 1.3;
-  margin-left: 10px;
 }
+}
+
+.social-footer {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: $color_secondary;
+  }
 }
 
 @include maxwidthlandscape(md) {

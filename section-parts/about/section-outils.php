@@ -7,12 +7,13 @@
  ?>
  <?php
   $classes = 'section-outils';
+  $outils_title    = get_theme_mod( 'outils_title' );
    ?>
  <section class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'outils' ) ); ?>">
    <div class="container">
       <div class="row no-gutters">
         <div class="title-outil col-md-12">
-          <h2 class="">Outils/Languages/framework</h2>
+          <h2><?php echo esc_html( $outils_title );?></h2>
         </div>
      <?php
       for ($c = 1; $c <= 12; $c++) {

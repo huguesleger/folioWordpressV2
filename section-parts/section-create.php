@@ -10,7 +10,7 @@ $section_create_title = get_theme_mod('section_create_title');
 $section_create_description = get_theme_mod('section_create_description');
 $classes = 'section-create';
  ?>
-<section id="create" class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'create' ) ); ?> py-5">
+<section id="create" class="<?php echo esc_attr( apply_filters( 'portfoliohl_section_class', $classes, 'create' ) ); ?> pb-5">
   <div class="content-create">
     <div class="illustration col-xl-8">
       <?php get_template_part('template-parts/svg/content-illu', 'create'); ?>
@@ -22,8 +22,13 @@ $classes = 'section-create';
         </div>
         <h3><?php echo esc_html($section_create_title);?></h3>
       </div>
+      <?php if ( $section_create_description ) { ?>
       <div class="txt-create">
         <p><?php echo esc_html($section_create_description);?></p>
+    </div>
+    <?php
+  }
+  ?>
     </div>
     </div>
   </div>

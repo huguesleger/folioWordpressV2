@@ -8,7 +8,6 @@
       }
   }
   .content-cursus {
-    padding: 1rem 4.5rem 1rem;
     .number-cursus {
       font-size: 8em;
       font-family: $font_number;
@@ -22,6 +21,8 @@
         font-weight: 900;
         padding-top: 1.5rem;
         padding-bottom: 2rem;
+        padding-left: 4rem;
+        padding-right: 2rem;
         position: relative;
         font-size: 2.2em;
         font-family: $font_secondary;
@@ -36,7 +37,7 @@
 }
 /**** number ****/
 .section-number{
-  background-color: $color_primary;
+  background: $gradient_primary;
   padding: 2rem 0;
   position: relative;
   // &::before {
@@ -46,7 +47,7 @@
   //   left: 0;
   //   right: 0;
   //   height: 90px;
-  //   background-color: $color_primary;
+  //   background: $color_primary;
   //   transform: skewY(-3deg);
   //   transform-origin: 0;
   // }
@@ -81,9 +82,21 @@
   .content-outil {
     text-align: center;
     border: 1px solid $color_grey_light;
+    overflow: hidden;
     .outil-name {
       display: block;
       padding-bottom: 1rem;
     }
+  }
+}
+
+@include maxwidth(sm) {
+  .section-cursus .content-cursus .formation {
+    font-size: 1.7rem;
+    padding-left: 3rem;
+    padding-right: 0;
+  }
+  .section-cursus .content-cursus .formation .formation-school {
+    display: block;
   }
 }

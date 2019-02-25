@@ -4,11 +4,11 @@
 ---------------
 */
 .section-create {
-  background-color: $color_fig;
+  background: #fff;
   transition: 0.3s ease-in-out;
   transition-delay: 0.85s;
     &.__bg-light {
-      background-color: $color_grey_light;
+      background: #fff;
       transition: 0.3s ease-in-out;
       transition-delay: 0.85s;
     }
@@ -33,12 +33,11 @@
         margin: 0;
         align-items: center;
         font-family: $font_secondary;
-        font-size: 40px;
+        font-size: 2.2rem;
         font-weight: 900;
         letter-spacing: 0.04em;
-        color: #fff;
-        border-left: 2px solid #fff;
-        line-height: 55px;
+        color: #333;
+        border-left: 2px solid #333;
         padding-left: 15px;
         transition: color 0.3s ease-in-out, border-color .3s ease-in-out;
         transition-delay: 0.85s;
@@ -54,7 +53,7 @@
       width: 55px;
       height: 55px;
       margin-right: 15px;
-      fill: $color_red;
+      fill: $color_primary;
       cursor: pointer;
       transition: transform 0.25s;
         &.__txt-open {

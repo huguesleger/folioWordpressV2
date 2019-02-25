@@ -7,7 +7,7 @@ function slider(){
   $('.slider').slick({
     dots: true,
     rtl: false,
-    arrows: false,
+    arrows: true,
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: $('.slider').data('sliderspeed'),

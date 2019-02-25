@@ -117,9 +117,9 @@
  				<div class="content-tree-txt" style=" background-color:'. $background .'">
  				<div class="container">
         <div class="row">
-         <div class="block-tree-txt col-md-4 col-sm-9"><p style="color:'. $color .'">'.$txt.'</p></div>
- 				<div class="block-tree-txt col-md-4 col-sm-9"><p style="color:'. $color .'">'.$txt_2.'</p></div>
- 				<div class="block-tree-txt col-md-4 col-sm-9"><p style="color:'. $color .'">'.$txt_3.'</p></div>
+         <div class="block-tree-txt col-lg-4 col-md-12"><p style="color:'. $color .'">'.$txt.'</p></div>
+ 				<div class="block-tree-txt col-lg-4 col-md-12"><p style="color:'. $color .'">'.$txt_2.'</p></div>
+ 				<div class="block-tree-txt col-lg-4 col-md-12"><p style="color:'. $color .'">'.$txt_3.'</p></div>
          </div>
          </div>
  				</div>';

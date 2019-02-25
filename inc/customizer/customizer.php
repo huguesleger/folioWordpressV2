@@ -39,6 +39,7 @@
   require get_template_directory() . '/inc/customizer/customizer-section-slider.php';
   require get_template_directory() . '/inc/customizer/customizer-section-service.php';
   require get_template_directory() . '/inc/customizer/customizer-section-webdesign.php';
+  require get_template_directory() . '/inc/customizer/customizer-post.php';
 
   // Load custom portfolio
   require get_template_directory() . '/inc/customizer/customizer-portfolio.php';
@@ -48,6 +49,9 @@
 
   // Load social
   require get_template_directory() . '/inc/customizer/customizer-social.php';
+
+  // Load color
+  require get_template_directory() . '/inc/customizer/customizer-color.php';
 
   // Load sanitize
   require get_template_directory() . '/inc/customizer/sanitize.php';

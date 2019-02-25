@@ -1,16 +1,27 @@
 /***** header *****/
 .header-page {
-  height: 450px;
+  height: 370px;
+  position: relative;
+  margin-top: 80px;
+  &::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $gradient_primary_rgba;
+  }
 .header-page-img{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    padding: 9rem 0;
+    padding-top: 9rem;
     .hero-page {
       height: 100%;
       color: #fff;
-      padding: 5rem 0;
+      position: relative;
         h1 {
           text-transform: uppercase;
           font-weight: 600;
@@ -23,53 +34,33 @@
           display: block
         }
     }
+    &.header-error {
+      background-attachment: inherit;
+    }
 }
 }
-
-.header-about {
-  height: 690px;
-  position: relative;
-  background-color: $color_primary;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    transform: skewY(-3deg);
-    transform-origin: 100%;
-    height: 120px;
-  }
-  .header-page-img{
-      background-size: cover;
-      background-position: center -20%;
-      height: 100%;
-      padding: 9rem 0;
-      .hero-page {
-        height: 100%;
-        color: #fff;
-        padding: 5rem 0;
-          h1 {
-            text-transform: uppercase;
-            font-weight: 600;
-            border-left: 3px solid #fff;
-            padding-left: 10px;
-          }
-          .baseline {
-            padding-top: 15px;
-            display: block
-          }
-      }
-  }
-}
-
 
 .header-single-post {
   height: 490px;
+  position: relative;
   .header-page-img{
       background-size: cover;
       background-position: center;
       height: 100%;
+      &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:  0;
+        background: $gradient_primary_rgba;
+      }
+  }
+}
+
+@include maxwidth(sm) {
+  .header-page .header-page-img {
+    background-attachment: inherit;
   }
 }

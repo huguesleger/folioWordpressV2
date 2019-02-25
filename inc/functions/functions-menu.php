@@ -36,15 +36,15 @@
           <li class="info-item"><a class="item" href="mailto:contactme@hl-developerz.com"><i class="fas fa-envelope-open"></i><span>contactme@hl-developerz.com</span></a></li>
           <?php
           if ( $facebook_url ) { ?>
-          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $facebook_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $facebook_icon ); ?>"></i></a></li>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $facebook_url ); ?>" target="_blank" rel="noopener noreferrer"><i class="fab <?php echo esc_html( $facebook_icon ); ?>"></i></a></li>
           <?php
           }
           if ( $linkedin_url ) { ?>
-          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $linkedin_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $linkedin_icon ); ?>"></i></a></li>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $linkedin_url ); ?>" target="_blank" rel="noopener noreferrer"><i class="fab <?php echo esc_html( $linkedin_icon ); ?>"></i></a></li>
           <?php
           }
           if ( $instagram_url ) { ?>
-          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $instagram_url ); ?>" target="_blank"><i class="fab <?php echo esc_html( $instagram_icon ); ?>"></i></a></li>
+          <li class="info-item-social"><a class="item" href="https://<?php echo esc_html( $instagram_url ); ?>" target="_blank" rel="noopener noreferrer"><i class="fab <?php echo esc_html( $instagram_icon ); ?>"></i></a></li>
           <?php
           } ?>
         </ul>

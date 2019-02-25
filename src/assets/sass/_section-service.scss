@@ -54,7 +54,7 @@
 ---------------
 */
 .section-service {
-  background: $color_grey_light;
+  background: #fff;
   z-index: 10;
   .content-service.style-inline {
     flex-direction: column;
@@ -75,7 +75,7 @@
     padding-right: 0;
   }
   .icon-item {
-  border: 2px solid #333;
+  border: 2px solid $color_secondary;
 	display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +93,8 @@
     }
 		&:hover {
 			transition: 0.3s ease-in-out;
-			border: 2px solid $color_grey_dark;
-			background: $color_grey_dark;
+			border: 2px solid $color_secondary;
+			background: $color_secondary;
 			i {
 				transition: 0.3s ease-in-out;
 				color: #fff;
@@ -119,10 +119,10 @@
     padding-top: 2rem;
   }
   .card {
-    background-color: transparent;
+    background: transparent;
   }
   .card-header {
-   background-color: transparent;
+   background: transparent;
    border-bottom: none;
  }
   .title-collapse{

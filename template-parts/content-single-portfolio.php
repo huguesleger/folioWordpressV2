@@ -32,15 +32,12 @@
  <div class="content-single-portfolio">
 <?php the_content(); ?>
 
-<div class="nav-portfolio">
 <?php
 // Previous/next post navigation.
+
 the_post_navigation( array(
-  'prev_text' => '<span class="post-meta _prev"><i class="fas fa-chevron-left"></i><span class="title_meta">%title</span></span>',
-  'next_text' => '<span class="post-meta _next"><i class="fas fa-chevron-right"></i><span class="title_meta">%title</span></span>',
+  'prev_text' => '<span class="title-meta"><i class="fas fa-long-arrow-alt-left"></i> Page précédente</span>',
+  'next_text' => '<span class="title-meta">Page suivante <i class="fas fa-long-arrow-alt-right"></i></span>',
 ) );
 ?>
-
-</div>
-
  </div>

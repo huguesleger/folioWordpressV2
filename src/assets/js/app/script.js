@@ -53,27 +53,30 @@ function colorMain() {
     count
 ---------------------------------------------*/
 function Count() {
-  $('.counter').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-
-    {
-
-      duration: 3000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
-      }
-
-    });
+  var header = $('.header-about').height();
+  var cursus = $('.section-cursus').height();
+  var position = header + cursus;
+  var offset = position - 400;
+  $(window).on('scroll', function(){
+    if($(window).scrollTop()>= offset){
+      $('.counter').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+        {
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+      });
+    }
   });
 }
 
@@ -81,12 +84,13 @@ function Count() {
     message email
 ---------------------------------------------*/
 function destroyMessage() {
+  $('.contact-form .wpcf7-response-output').addClass('wech');
       $('.wpcf7-submit').click(function showArlet(){
         window.setTimeout(function(){
-          $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.alert-success').addClass('hide'); }, 4500);
+          $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.alert-success').addClass('hide'); }, 9500);
           $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.success').removeClass('hide');
           window.setTimeout(function(){
-            $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.alert-success').addClass('destroy'); }, 5000);
+            $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.alert-success').addClass('destroy'); }, 10000);
             $('.wpcf7-response-output.alert-warning, .wpcf7-response-output.success').removeClass('destroy');
           });
       }

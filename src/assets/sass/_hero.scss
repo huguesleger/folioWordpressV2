@@ -1,0 +1,74 @@
+/**** hero ****/
+.hero {
+  min-height: 800px;
+  &.hero-bg {
+    background-color: #fff;
+    background-image: url('../../assets/img/bg-hero-blue-2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hello {
+    width: 60%;
+    padding-top: 8rem;
+      .hello-part1 {
+        fill: #000;
+      }
+      .hello-part2 {
+        fill: #000;
+      }
+      .hello-line {
+        fill: transparent;
+        stroke: $color_primary;
+      }
+      .hello-circle {
+        fill: $color_primary;
+      }
+      .hello-rect {
+        stroke: #000;
+      }
+      .info-hello {
+        color: #000;
+      }
+  }
+  .img-hero {
+    padding-top: 8rem;
+    float: right;
+  }
+  .hero-title {
+    span {
+      font-size: 2rem;
+    }
+    h1 {
+      font-family: $font_secondary;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: $color_secondary;
+      font-family: $font_secondary;
+      font-weight: 300;
+      margin-top: -5px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+@include minmaxwidth(sm, md) {
+  .hero {
+    min-height: 540px;
+  }
+}
+@include maxwidth(sm) {
+  .hero.hero-bg {
+    background: $gradient_primary;
+    padding-bottom: 30px;
+  }
+  .hero .hero-title h2 {
+    color: #fff !important;
+  }
+  .hero .img-hero {
+    padding-top: 3rem;
+  }
+}

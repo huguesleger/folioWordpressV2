@@ -16,13 +16,13 @@ $classes = 'section-design';
      <div class="title">
        <?php
           if ( $section_design_title ) { ?>
-           <h3 class="title-section"><?php echo esc_html( $section_design_title ) ?></h3>
+           <h3 class="title-section title-inline pr-4"><?php echo esc_html( $section_design_title ) ?></h3>
            <?php
           }
           ?>
      </div>
      <div class="row no-gutters">
-       <div class="design-left col-xl-7">
+       <div class="design-left col-xl-12">
          <?php
             for ($c = 1; $c <= 3; $c++ ) {
               $section_design_icon = get_theme_mod( 'section_design_icon_' . $c );
@@ -37,12 +37,12 @@ $classes = 'section-design';
             }
           ?>
        </div>
-         <div class="design-img col-md-6 col-xl-5">
+         <!-- <div class="design-img col-md-6 col-xl-5">
                 <img class="img-fluid" src="<?php echo (get_template_directory_uri() . '/assets/img/imac.png'); ?>">
                 <div class="device-img">
                   <img class="img-fluid" src="<?php echo esc_url($section_design_img); ?>">
                 </div>
-         </div>
+         </div> -->
      </div>
    </div>
  </section>

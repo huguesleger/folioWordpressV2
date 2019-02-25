@@ -92,24 +92,6 @@ $wp_customize->add_control(
     )
   )
 );
-// color icon
-$wp_customize->add_setting(
-    'section_service_color_icon',
-    array(
-        'default'           => $defaults['service_color_icon'],
-        'sanitize_callback' => 'portfoliohl_sanitize_text',
-    )
-);
-$wp_customize->add_control(
-    new WP_Customize_Color_Control(
-        $wp_customize,
-        'section_service_color_icon',
-        array(
-            'label'     => esc_html__('Couleur icon:', 'portfoliohl'),
-            'section'   => 'section_service',
-        )
-    )
-);
 // class
 $wp_customize->add_setting(
     'section_service_class',

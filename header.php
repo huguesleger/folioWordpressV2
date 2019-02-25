@@ -15,6 +15,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <div id="wptime-plugin-preloader"></div>
   <?php //Used for portfoliohl_header_bar()
 	do_action('portfoliohl_header'); ?>
 
