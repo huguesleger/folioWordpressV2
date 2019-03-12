@@ -30,7 +30,7 @@ $classes = 'section-design';
               $section_design_txt = get_theme_mod( 'section_design_txt_' . $c );
                ?>
               <div class="design-block col-sm-4">
-                <h5 class="title-block"><span class="design-icon"><i class="<?php echo esc_html( $section_design_icon ) ?>"></i></span><?php echo esc_html( $section_design_subtitle ) ?></h5>
+                <h4 class="title-block"><span class="design-icon"><i class="<?php echo esc_html( $section_design_icon ) ?>"></i></span><?php echo esc_html( $section_design_subtitle ) ?></h4>
                 <p><?php echo esc_html( $section_design_txt ) ?></p>
               </div>
             <?php

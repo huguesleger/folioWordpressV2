@@ -39,7 +39,7 @@
   require get_template_directory() . '/inc/customizer/customizer-section-slider.php';
   require get_template_directory() . '/inc/customizer/customizer-section-service.php';
   require get_template_directory() . '/inc/customizer/customizer-section-webdesign.php';
-  require get_template_directory() . '/inc/customizer/customizer-post.php';
+  require get_template_directory() . '/inc/customizer/customizer-section-post.php';
 
   // Load custom portfolio
   require get_template_directory() . '/inc/customizer/customizer-portfolio.php';

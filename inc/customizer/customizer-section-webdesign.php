@@ -64,6 +64,35 @@ $wp_customize->add_control(
         'section'   => 'section_webdesign',
     )
 );
+$wp_customize->add_setting(
+    'section_webdesign_btn_url',
+    array(
+        'sanitize_callback' => 'esc_url_raw',
+    )
+  );
+$wp_customize->add_control(
+    'section_webdesign_btn_url',
+    array(
+        'label'   => esc_html__('Lien du bouton', 'portfoliohl'),
+        'section' => 'section_webdesign',
+        'type'    => 'text',
+    )
+  );
+$wp_customize->add_setting(
+    'section_webdesign_btn_title',
+    array(
+        'sanitize_callback' => 'portfoliohl_sanitize_text',
+    )
+  );
+
+$wp_customize->add_control(
+    'section_webdesign_btn_title',
+    array(
+        'label'   => esc_html__('Titre du bouton', 'portfoliohl'),
+        'section' => 'section_webdesign',
+        'type'    => 'text',
+    )
+  );
 /* Options
 ----------------------------------------------------------------------*/
 $wp_customize->add_control( new Portfoliohl_Info( $wp_customize, 'parallax_webdesign', array(
@@ -150,6 +179,35 @@ $wp_customize->add_control(
         'section'   => 'section_webdesign',
     )
 );
+$wp_customize->add_setting(
+    'section_webdesign_device_btn_url',
+    array(
+        'sanitize_callback' => 'esc_url_raw',
+    )
+  );
+$wp_customize->add_control(
+    'section_webdesign_device_btn_url',
+    array(
+        'label'   => esc_html__('Lien du bouton', 'portfoliohl'),
+        'section' => 'section_webdesign',
+        'type'    => 'text',
+    )
+  );
+$wp_customize->add_setting(
+    'section_webdesign_device_btn_title',
+    array(
+        'sanitize_callback' => 'portfoliohl_sanitize_text',
+    )
+  );
+
+$wp_customize->add_control(
+    'section_webdesign_device_btn_title',
+    array(
+        'label'   => esc_html__('Titre du bouton', 'portfoliohl'),
+        'section' => 'section_webdesign',
+        'type'    => 'text',
+    )
+  );
 //image device
 $wp_customize->add_setting(
      'section_webdesign_device_img',

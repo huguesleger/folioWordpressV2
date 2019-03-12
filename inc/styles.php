@@ -78,8 +78,6 @@ $custom .= ".main #logo {fill:" . esc_attr($color_logo) . ";}"."\n";
   $custom .= ".section-service .icon-item {color:" . esc_attr($color_secondary) . ";}"."\n";
   $custom .= ".section-service .icon-item:hover {background:" . esc_attr($color_secondary) . ";}"."\n";
   $custom .= ".section-service .icon-item:hover {border-color:" . esc_attr($color_secondary) . ";}"."\n";
-  //icon-social-contact
-  $custom .= ".contact .content-infos .social-list .link-social {color:" . esc_attr($color_secondary) . ";}"."\n";
   //Footer
   $custom .= ".footer .wrap-copy {background:" . esc_attr($color_secondary) . ";}"."\n";
 

@@ -84,7 +84,7 @@ function portfoliohl_header() {
         </div>
         <div class="col-md-6">
           <div class="img-hero">
-            <img class="img-fluid animated fadeIn delay-2s" src="<?php echo esc_url($img_hero); ?>">
+            <img class="img-fluid animated fadeIn delay-2s" src="<?php echo esc_url($img_hero); ?>" alt="illustration webdesigner et intégrateur web" title="webdesigner intégrateur web">
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ function portfoliohl_header() {
           <div class="hero-page">
             <h1><?php the_title() ?></h1>
             <?php if (get_field('baiseline')): { ?>
-              <span class="baseline"><?php echo the_field('baiseline')?></span>
+              <h2 class="baseline"><?php echo the_field('baiseline')?></h2>
               <?php
             }
             endif; ?>

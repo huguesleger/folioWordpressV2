@@ -1,6 +1,6 @@
 /***** header *****/
 .header-page {
-  height: 370px;
+  height: 450px;
   position: relative;
   margin-top: 80px;
   &::before {
@@ -11,6 +11,17 @@
     left: 0;
     right: 0;
     background: $gradient_primary_rgba;
+  }
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: url('../../assets/img/wave-header-page.svg') bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
   }
 .header-page-img{
     background-size: cover;
@@ -31,7 +42,8 @@
         }
         .baseline {
           padding-top: 15px;
-          display: block
+          display: block;
+          font-size: 1rem;
         }
     }
     &.header-error {
@@ -62,5 +74,11 @@
 @include maxwidth(sm) {
   .header-page .header-page-img {
     background-attachment: inherit;
+  }
+}
+
+@include maxwidth(md) {
+  .header-page {
+    height: 370px;
   }
 }

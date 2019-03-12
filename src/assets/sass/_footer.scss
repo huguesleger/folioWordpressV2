@@ -25,15 +25,15 @@
   line-height: 1.3;
 }
 }
-
-.social-footer {
-  display: inline-block;
-  margin: 0 0.5rem;
-  transition: 0.2s ease-in-out;
-  &:hover {
-    color: $color_secondary;
+  .social-footer {
+    display: inline-block;
+    margin: 0 0.5rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: $color_secondary;
+    }
   }
-}
+
 
 @include maxwidthlandscape(md) {
   .footer {

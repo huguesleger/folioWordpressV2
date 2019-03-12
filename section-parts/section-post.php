@@ -33,7 +33,7 @@ $section_post_description = get_theme_mod('section_post_description');
   <div class="wrap-post my-5">
     <div class="container">
       <div class="row">
-        <div class="content-txt col-lg-5">
+        <div class="content-txt col-lg-5 wow <?php the_field('wow-txt'); ?>" data-wow-duration="1200ms" data-wow-delay="900ms">
           <div class="wrap-icon-post">
             <?php
             $terms_list = wp_get_post_terms($post->ID,'works');
@@ -53,7 +53,7 @@ $section_post_description = get_theme_mod('section_post_description');
             </div>
         </div>
         <div class="content-img col-lg-7">
-          <div class="wrap-img">
+          <div class="wrap-img wow <?php the_field('wow-img'); ?>" data-wow-duration="1200ms" data-wow-delay="900ms">
             <?php if( get_field('image') ): ?>
             <img class="img-fluid" src="<?php the_field('image'); ?>">
             <?php endif; ?>

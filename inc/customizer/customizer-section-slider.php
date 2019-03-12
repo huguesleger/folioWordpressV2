@@ -134,33 +134,4 @@ $wp_customize->add_control(
         'type' 		  => 'textarea',
     )
 );
-$wp_customize->add_setting(
-    'section_slide_btn_url_' . $c,
-    array(
-        'sanitize_callback' => 'esc_url_raw',
-    )
-  );
-$wp_customize->add_control(
-    'section_slide_btn_url_' . $c,
-    array(
-        'label'   => esc_html__('Lien du bouton', 'portfoliohl'),
-        'section' => 'section_slider',
-        'type'    => 'text',
-    )
-  );
-$wp_customize->add_setting(
-    'section_slide_btn_title_' . $c,
-    array(
-        'sanitize_callback' => 'portfoliohl_sanitize_text',
-    )
-  );
-
-$wp_customize->add_control(
-    'section_slide_btn_title_' . $c,
-    array(
-        'label'   => esc_html__('Titre du bouton', 'portfoliohl'),
-        'section' => 'section_slider',
-        'type'    => 'text',
-    )
-  );
 }

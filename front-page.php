@@ -22,7 +22,8 @@ do_action('portfoliohl_frontpage_before_section_parts');
               'slider',
               'service',
               'webdesign',
-              'post'
+              'post',
+              'contact'
         )
       );
 

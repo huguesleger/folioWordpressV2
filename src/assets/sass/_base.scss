@@ -144,7 +144,7 @@ ul {
 .desc-section {
   padding: 1rem 0;
 }
-
+/**** animate ****/
 .animated-slow {
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -155,4 +155,11 @@ ul {
 
 .delay-2s {
   animation-delay: 2s;
+}
+/**** box ****/
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
 }

@@ -210,6 +210,8 @@ function postPosition() {
   // $('.section-post .wrap-post:nth-child(2n+1) .content-img').addClass('reverse');
 }
 
+  //Initiat WOW JS
+new WOW().init();
 /*--------------------------------------------
     load function
 ---------------------------------------------*/

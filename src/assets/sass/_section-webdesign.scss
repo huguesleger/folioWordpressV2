@@ -20,9 +20,20 @@
   }
   .wrap-bottom {
     background: $color_grey_light;
+    position: relative;
+    &::before {
+      content:'';
+      position: absolute;
+      height: 100%;
+      background-image: url('../../assets/img/shape-webdesign.svg');
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center bottom;
+    }
     .wrap-device {
       position: relative;
-      margin: 0 auto;
       .device-img {
         position: absolute;
         top: 0;
@@ -58,10 +69,9 @@
 .content-parallax {
   overflow: hidden;
 }
-}
-
-@include minmaxwidth(md, lg) {
-.section-webdesign .wrap-bottom .wrap-device .device-img {
-    margin: 3% 14% 18% 14%;
+.section-webdesign .wrap-bottom .device-block-txt {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0;
 }
 }

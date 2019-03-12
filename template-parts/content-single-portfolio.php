@@ -36,8 +36,8 @@
 // Previous/next post navigation.
 
 the_post_navigation( array(
-  'prev_text' => '<span class="title-meta"><i class="fas fa-long-arrow-alt-left"></i> Page précédente</span>',
-  'next_text' => '<span class="title-meta">Page suivante <i class="fas fa-long-arrow-alt-right"></i></span>',
+  'prev_text' => '<span class="title-meta btn-default-lg"><i class="fas fa-long-arrow-alt-left"></i> Page précédente</span>',
+  'next_text' => '<span class="title-meta btn-default-lg">Page suivante <i class="fas fa-long-arrow-alt-right"></i></span>',
 ) );
 ?>
  </div>
