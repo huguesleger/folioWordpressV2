@@ -109,18 +109,6 @@
     display: none;
 }
 
-/* Icons */
-// @font-face
-// {
-//     font-family: 'slick';
-//     font-weight: normal;
-//     font-style: normal;
-//
-//     src: url('../../css/fonts/slick.eot');
-//     src: url('../../css/fonts/slick.eot?#iefix') format('embedded-opentype'), url('../../css/fonts/slick.woff') format('woff'), url('../../css/fonts/slick.ttf') format('truetype'), url('../../css/fonts/slick.svg#slick') format('svg');
-// }
-
-
 /* Slider */
 .slick-prev,
 .slick-next
@@ -130,8 +118,6 @@
     position: absolute;
     top: 50%;
     display: block;
-    /* width: 20px;
-    height: 20px; */
     padding: 0;
     z-index: 1;
     text-align: center;
@@ -285,11 +271,6 @@
 
 
 /**** responsive ****/
-// @include minmaxwidth(sm, lg) {
-//   .slider .slick-slide {
-//     height: 590px;
-// }
-// }
 @include maxwidth(sm) {
   .slider .slick-slide {
     height: 390px;

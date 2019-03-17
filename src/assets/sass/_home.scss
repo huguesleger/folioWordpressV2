@@ -64,7 +64,6 @@
       &.__hide {
         transform: translateY(-100vh);
         transition: transform 0.3s;
-        // transition-timing-function: cubic-bezier(0.79, 0.32, 0.16, 1.01);
         transition-delay: 0.85s;
          &:nth-child(5) {
            transform: none;
@@ -89,7 +88,6 @@
       opacity: 1;
       transition: opacity 0.3s ease-in-out;
       transition-delay: 0.35s;
-      // transform: translateX(-42px);
     }
     .sub-title-job {
       font-weight: normal;
@@ -101,9 +99,6 @@
 
 /**** btn header ****/
 .btn-hello {
-  // position: absolute;
-  // bottom: 25px;
-  // left: 35px;
   display: inline-block;
   padding: 15px;
   text-align: center;
@@ -269,12 +264,5 @@
       .go-enter {
         margin-bottom: 50px;
       }
-  }
-}
-
-@include maxwidth(xs) {
-  .header-home {
-    // width: 100%;
-    // position: fixed;
   }
 }

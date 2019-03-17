@@ -18,13 +18,10 @@
     align-items: center;
   }
   .illustration {
-    // width: 70%;
     padding-left: 0;
     padding-right: 0;
   }
   .desc-create {
-    // width: 30%;
-    // padding: 0 25px;
     .title-create {
       display: flex;
       padding: 15px 0;
@@ -88,14 +85,7 @@
 }
 @include maxwidth(lg) {
   .section-create {
-    // .content-create {
-    //   flex-direction: column;
-    // }
-    // .illustration {
-    //   width: 100%;
-    // }
     .desc-create {
-      // width: 100%;
       padding-top: 40px;
         .title-create {
           justify-content: center;

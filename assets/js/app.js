@@ -96,8 +96,6 @@ var ShapeOverlays = (function () {
                 gNavItems[i].classList.add('__is-open');
             }
             illuNav.classList.add('__is-open');
-            // document.querySelector('.title').classList.add('__title-white');
-            // document.querySelector('.logo svg').classList.add('__logo-white');
             document.querySelector('body').classList.add('__overflow');
             document.querySelector('.wrap-nav').classList.add('__is-open');
             document.querySelector('.title-info').classList.add('__is-open');
@@ -111,8 +109,6 @@ var ShapeOverlays = (function () {
                 gNavItems[i].classList.remove('__is-open');
             }
             illuNav.classList.remove('__is-open');
-            // document.querySelector('.title').classList.remove('__title-white');
-            // document.querySelector('.logo svg').classList.remove('__logo-white');
             document.querySelector('body').classList.remove('__overflow');
             document.querySelector('.wrap-nav').classList.remove('__is-open');
             document.querySelector('.title-info').classList.remove('__is-open');
