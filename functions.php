@@ -286,3 +286,19 @@ add_action( 'nav_menu_item_id', 'menu_item_id', 10, 3 );
 function menu_item_id( $id ) {
   return '';
 }
+
+//remove class from pages and page_posts
+add_filter( 'body_class', 'adjust_body_class' );
+function adjust_body_class( $classes ) {
+
+    foreach ( $classes as $key => $value ) {
+        if( 0 === strpos( $value, 'postid-' )
+          || 0 === strpos( $value, 'page' )
+          || 0 === strpos( $value, 'page-' )
+          || 0 === strpos($value, 'wp-')
+          || $value == 'page-template-'  )
+          unset($classes[$key]);
+    }
+
+    return $classes;
+}
