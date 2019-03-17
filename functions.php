@@ -12,17 +12,12 @@ if( ! function_exists('portfoliohl_setup')) :
     */
     add_theme_support('title-tag');
 
-
-
-
     /*
     * menu par default wordpress
     */
     register_nav_menus( array(
       'primary' => esc_html__('Primary','portfoliohl'),
-      'footer'  => esc_html__( 'Footer', 'portfoliohl' ),
     ));
-
 
     /*
    * Switch default core markup for search form, comment form, and comments
@@ -56,25 +51,16 @@ if( ! function_exists('portfoliohl_setup')) :
         'default-image' => '',
     )));
 
-
     /*
     * logo custum
     */
     add_theme_support('custom-logo',array(
-        // 'height' => 55,
-        // 'width' => 200,
         'flex-height' => true,
     ));
 
   }
 endif;
 add_action( 'after_setup_theme', 'portfoliohl_setup' );
-
-// // size of the excerpt
-// function portfoliohl_post_excerpt($length) {
-// 	return 10;
-// }
-// add_filter('excerpt_length', 'portfoliohl_post_excerpt');
 
 /**
  * Enqueue scripts and styles.
@@ -92,11 +78,7 @@ function portfoliohl_scripts() {
  */
  wp_enqueue_script( 'portfoliohl-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), '', true );
  wp_enqueue_script( 'portfoliohl-easings', get_template_directory_uri() . '/assets/js/easings.min.js', array('jquery'), '', true );
-// wp_enqueue_script( 'portfoliohl-velocity', get_template_directory_uri() . '/assets/js/vendor/velocity.min.js', array('jquery'), '', true );
-// wp_enqueue_script( 'portfoliohl-wow', get_template_directory_uri() . '/assets/js/vendor/wow.min.js', array('jquery'), '', true );
-// wp_enqueue_script( 'portfoliohl-scroll', get_template_directory_uri() . '/assets/js/vendor/scrollMonitor.min.js', array('jquery'), '', true );
  wp_enqueue_script( 'portfoliohl-slick', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), '', true );
- // wp_enqueue_script( 'portfoliohl-parallax', get_template_directory_uri() . '/assets/js/parallax.min.js', array('jquery'), '', true );
  wp_enqueue_script( 'portfoliohl-app.js', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -105,7 +87,6 @@ function portfoliohl_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'portfoliohl_scripts');
 
-
 // Load scripts on home page ONLY
 
 function jquery_only_home() {
@@ -113,7 +94,7 @@ function jquery_only_home() {
 wp_enqueue_script( 'portfoliohl-anim', get_template_directory_uri() . '/assets/js/anime.min.js', array('jquery'), '', true );
 wp_enqueue_script( 'portfoliohl-parallax', get_template_directory_uri() . '/assets/js/parallax.min.js', array('jquery'), '', true );
 wp_enqueue_script( 'portfoliohl-wow', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'), '', true );
-wp_enqueue_script( 'portfoliohl-apphome.js', get_template_directory_uri() . '/assets/js/app-home.js', array('jquery'), '', true );
+wp_enqueue_script( 'portfoliohl-apphome', get_template_directory_uri() . '/assets/js/app-home.js', array('jquery'), '', true );
 	}
 }
 
@@ -126,8 +107,6 @@ function portfoliohl_enqueue_bootstrap() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap-v4/bootstrap.css', array(), true );
 }
 add_action( 'wp_enqueue_scripts', 'portfoliohl_enqueue_bootstrap', 9 );
-
-
 
 /**
  * Customizer defaults
@@ -164,22 +143,6 @@ function portfoliohl_customizer_defaults() {
 }
 endif;
 
-
-
-/**
- * Styles
- */
-// require get_template_directory() . '/inc/styles.php';
-
-
-/**
- * Customizer additions.
- */
-// require get_template_directory() . '/inc/customizer.php';
-
-
-
-
 /**
  * Functions
  */
@@ -201,22 +164,6 @@ require get_template_directory() . '/inc/shortcode/shortcode.php';
  */
 require get_template_directory() . '/inc/customizer/customizer.php';
 require get_template_directory() . '/inc/styles.php';
-
-
-// require get_template_directory() . '/inc/about.php';
-//
-// require get_template_directory() . '/inc/shortcode.php';
-//
-// require get_template_directory() . '/inc/portfolio.php';
-//
-// require get_template_directory() . '/inc/breadcrumb.php';
-//
-// require get_template_directory() . '/inc/template-tags.php';
-//
-// require get_template_directory() . '/inc/functions/loader.php';
-//
-// require get_template_directory() . '/inc/cleanup.php';
-
 
 /**
 * custom metabox
@@ -292,13 +239,12 @@ add_filter( 'body_class', 'adjust_body_class' );
 function adjust_body_class( $classes ) {
 
     foreach ( $classes as $key => $value ) {
-        if( 0 === strpos( $value, 'postid-' )
-          || 0 === strpos( $value, 'page' )
-          || 0 === strpos( $value, 'page-' )
+        if( 0 === strpos( $value, 'postid-')
+          || 0 === strpos( $value, 'page')
+          || 0 === strpos( $value, 'page-')
           || 0 === strpos($value, 'wp-')
-          || $value == 'page-template-'  )
+          || $value == 'page-template-')
           unset($classes[$key]);
     }
-
     return $classes;
 }

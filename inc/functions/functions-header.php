@@ -23,50 +23,6 @@ function portfoliohl_header() {
 
 /* header page home */
   if ( is_front_page() && ! is_home() ) { ?>
- <!-- <header class="header-home header-bg">
-    <div class="wrap-hello col-md">
-      <div class="hello">
-        <?php get_template_part( 'template-parts/svg/content', 'illu-hello' ); ?>
-      </div>
-      <div class="btn-hello btn-round btn-round-sm">
-        <i class="fas fa-play"></i>
-      </div>
-      <div class="enter-responsive">
-        <div class="go-enter">
-        <a class="enter" id="enterResponsive" href="#create"><img class="mouse img-responsive" src="<?php echo esc_url($img_mouse); ?>"/></a>
-        </div>
-      </div>
-    </div>
-    <div class="wrap-whale col-md">
-      <h1 class="txt-job">
-        <span><?php echo esc_html($header_txt_intro);?></span>
-        <span><?php echo esc_html($header_txt_metier_1);?></span>
-        <span><?php echo esc_html($header_txt_metier_2);?></span>
-        <span class="sub-title-job"><?php echo esc_html($header_desc_metier_1);?></span>
-        <span class="txt-and">&</span>
-        <span class="txt-dev"><?php echo esc_html($header_txt_metier_3);?></span>
-        <span class="sub-title-job"><?php echo esc_html($header_desc_metier_2);?></span>
-      </h1>
-      <div class="whale" id ="whale">
-        <?php get_template_part( 'template-parts/svg/content', 'illu-whale' ); ?>
-      </div> -->
-      <!-- presentation -->
-       <!-- <div class="presentation">
-        <div class="btn-close btn-round btn-round-xs mb-3">
-          <i class="fas fa-times"></i>
-        </div>
-        <h2><?php echo esc_html($header_present_name);?></h2>
-        <h3><?php echo esc_html($header_present_age);?></h3>
-        <span class="presentation-ville"><?php echo esc_html($header_present_ville);?></span>
-        <p><?php echo esc_html($header_present_description);?></p>
-      </div>
-      <div class="scroll-down">
-        <p>Click To Enter</p>
-        <a class="enter" id="enter" href="#create"><img class="mouse img-responsive" src="<?php echo esc_url($img_mouse); ?>"/></a>
-      </div>
-    </div>
-</header> -->
-
 <header class="hero hero-bg">
     <div class="container">
       <div class="row">
@@ -91,7 +47,6 @@ function portfoliohl_header() {
       </div>
     </div>
 </header>
-
 
 <?php
 /* header page min*/

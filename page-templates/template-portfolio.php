@@ -21,7 +21,6 @@ while ( have_posts() ) : the_post(); ?>
   endif; ?>
 <?php endwhile; ?>
 <div class="works-content">
-<!-- <div class="container" id="folio_fullwidth"> -->
 <?php echo '<div class="'. $portfolio_class .'">'; ?>
 <div class="row px-custom">
 <?php

@@ -37,12 +37,6 @@ $classes = 'section-design';
             }
           ?>
        </div>
-         <!-- <div class="design-img col-md-6 col-xl-5">
-                <img class="img-fluid" src="<?php echo (get_template_directory_uri() . '/assets/img/imac.png'); ?>">
-                <div class="device-img">
-                  <img class="img-fluid" src="<?php echo esc_url($section_design_img); ?>">
-                </div>
-         </div> -->
      </div>
    </div>
  </section>
