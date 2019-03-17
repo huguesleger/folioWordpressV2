@@ -12,8 +12,7 @@
 function portfoliohl_header() {
 
   $img_header_page = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
-  $img_mouse = (get_template_directory_uri() . '/assets/img/macintosh-mouse.png');
-  $img_hero = (get_template_directory_uri() . '/assets/img/illu-hero-blue.png');
+  $img_hero = (get_template_directory_uri() . '/assets/img/illu-hero.png');
 /* metier */
   $header_txt_intro = get_theme_mod('header_txt_intro');
   $header_txt_metier_1 = get_theme_mod('header_txt_metier_1');
@@ -37,7 +36,7 @@ function portfoliohl_header() {
               <p><?php echo esc_html($header_desc_metier_1);?></p>
               <p><?php echo esc_html($header_desc_metier_2);?></p>
           </div>
-            <a id="enter" class="btn btn-default btn-default-primary my-4" href="#design">Enter<i class="fas fa-angle-down"></i></a>
+            <a id="enter" class="btn btn-default btn-default-primary my-4 animated fadeInUp delay-3s" href="#design">Enter<i class="fas fa-angle-down"></i></a>
         </div>
         <div class="col-md-6">
           <div class="img-hero">

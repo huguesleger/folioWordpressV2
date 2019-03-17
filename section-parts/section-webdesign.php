@@ -45,7 +45,7 @@ $classes                            = 'section-webdesign';
     <div class="container">
       <div class="row mt-md-5">
         <div class="wrap-device col-md-8 col-lg-6">
-          <img class="img-fluid" src="<?php echo (get_template_directory_uri() . '/assets/img/macbook.png'); ?>">
+          <img class="img-fluid" src="<?php echo (get_template_directory_uri() . '/assets/img/device.png'); ?>">
           <div class="device-img">
             <img class="img-fluid" src="<?php echo esc_url($section_webdesign_device_img); ?>">
           </div>

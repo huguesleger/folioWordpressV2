@@ -190,6 +190,11 @@ ul {
           animation-delay: 2s;
 }
 
+.delay-3s {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
 /**** box ****/
 .w-40 {
   width: 40%;
@@ -723,7 +728,7 @@ ul {
 
 .hero.hero-bg {
   background-color: #fff;
-  background-image: url("../../assets/img/bg-hero-blue-2.png");
+  background-image: url("../../assets/img/bg-hero.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2359,7 +2364,7 @@ ul {
   content: '';
   position: absolute;
   height: 100%;
-  background-image: url("../../assets/img/shape-webdesign.svg");
+  background-image: url("../../assets/img/wave-webdesign.svg");
   left: 0;
   right: 0;
   bottom: 0;
