@@ -1,12 +1,17 @@
 .main {
   width: 100%;
   height: 80px;
-  background: #fff;
-  position: sticky;
+  background: transparent;
   position: fixed;
   top: 0;
   z-index: 11;
-  box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+    &.__bg-color {
+      box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
+      background: #fff;
+      transition: 0.3s ease-in-out;
+    }
   .container-main {
     padding-right: 35px;
     padding-left: 35px;

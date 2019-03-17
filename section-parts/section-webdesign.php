@@ -26,8 +26,8 @@ $classes                            = 'section-webdesign';
         <div class="webdesign-block-txt col-lg-4">
           <h3 class="title-section"><?php echo esc_html($section_webdesign_title) ?></h3>
           <p class="pt-3"><?php echo esc_html($section_webdesign_desc) ?></p>
-          <?php if ( $slide_webdesign_btn_url ) : ?>
-            <a class="btn btn-outline btn-outline-primary btn-default-lg mt-3" href="<?php echo esc_url($slide_webdesign_btn_url); ?>"><?php echo esc_html($slide_webdesign_btn_title); ?><i class="fas fa-plus"></i></a>
+          <?php if ( $section_webdesign_btn_url ) : ?>
+            <a class="btn btn-default-primary btn-default-lg mt-3" href="<?php echo esc_url($section_webdesign_btn_url); ?>"><?php echo esc_html($section_webdesign_btn_title); ?> <i class="fas fa-plus"></i></a>
           <?php endif; ?>
         </div>
         <div class="content-parallax" id="imgWebdesign">
@@ -53,8 +53,8 @@ $classes                            = 'section-webdesign';
         <div class="device-block-txt col-md-10 col-lg-6">
           <h3><?php echo esc_html($section_webdesign_device_title) ?></h3>
           <p class="desc-section"><?php echo esc_html($section_webdesign_device_desc) ?></p>
-          <?php if ( $slide_webdesign_device_btn_url ) : ?>
-          <a class="btn btn-outline btn-outline-primary btn-default-lg mt-3" href="<?php echo esc_url($slide_webdesign_device_btn_url); ?>"><?php echo esc_html($slide_webdesign_device_btn_title); ?><i class="fas fa-plus"></i></a>
+          <?php if ( $section_webdesign_device_btn_url ) : ?>
+          <a class="btn btn-default-primary btn-default-lg mt-3" href="<?php echo esc_url($section_webdesign_device_btn_url); ?>"><?php echo esc_html($section_webdesign_device_btn_title); ?> <i class="fas fa-plus"></i></a>
         <?php endif; ?>
         </div>
       </div>

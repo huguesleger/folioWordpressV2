@@ -81,6 +81,7 @@ function portfoliohl_header() {
               <p><?php echo esc_html($header_desc_metier_1);?></p>
               <p><?php echo esc_html($header_desc_metier_2);?></p>
           </div>
+            <a id="enter" class="btn btn-default btn-default-primary my-4" href="#design">Enter<i class="fas fa-angle-down"></i></a>
         </div>
         <div class="col-md-6">
           <div class="img-hero">

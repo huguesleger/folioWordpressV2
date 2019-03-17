@@ -16,17 +16,17 @@
        <?php
        }
        ?>
-       <?php if ( get_field('lien_du_site') ): ?>
-       <div class="btn-header-single">
-         <a class="btn btn-default btn-dark btn-lg mt-4" href="<?php the_field('lien_du_site'); ?>" target="_blank">voir le site</a>
-       </div>
-     <?php endif ;?>
      </div>
    </div>
    <div class="header-content">
      <div class="wrap-img-single">
      <img class="img-fluid img-single" src="<?php the_field('image'); ?>">
      </div>
+     <?php if ( get_field('lien_du_site') ): ?>
+     <div class="btn-header-single text-center">
+       <a class="btn btn-default btn-default-primary btn-lg my-4" href="<?php the_field('lien_du_site'); ?>" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i> voir le site</a>
+     </div>
+   <?php endif ;?>
    </div>
  </header>
  <div class="content-single-portfolio">

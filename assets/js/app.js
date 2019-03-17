@@ -154,7 +154,7 @@ function animNav(){
 ---------------------------------------------*/
 function enter(){
   var nav = $('.main').height();
-  $('#enter, #enterResponsive').on('click', function(){
+  $('#enter').on('click', function(){
     $('html, body').animate({scrollTop: $(this.hash).offset().top - nav}, 800);
     return false;
   });
@@ -167,9 +167,9 @@ function colorMain() {
   var offset = 40;
   $(window).on('scroll', function(){
     if( $(window).scrollTop()>=offset ){
-      $('.home .main').addClass('__bg-color');
+      $('.main').addClass('__bg-color');
     } else {
-      $('.home .main').removeClass('__bg-color');
+      $('.main').removeClass('__bg-color');
     }
   });
 }

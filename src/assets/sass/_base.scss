@@ -17,27 +17,6 @@ ul {
   margin-bottom: 0;
   list-style: none;
 }
-
-/**** home main ****/
-.home .main {
-  background: transparent;
-  position: fixed;
-  left: 0;
-  right: 0;
-  transition: 0.3s ease-in-out;
-  box-shadow: none;
-    &.__bg-color {
-      box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
-      background: #fff;
-      transition: 0.3s ease-in-out;
-    }
-}
-.home .main #logo {
-  fill: #000;
-}
-.home .main.__bg-color #logo {
-  fill: $color_secondary;
-}
 /**** btn-round ****/
 .btn-round-xs {
   width: 30px;
@@ -103,7 +82,12 @@ ul {
   border-radius: 3rem;
 }
 .btn .svg-inline--fa {
+  margin-right: 10px;
+}
+.btn#enter .svg-inline--fa {
+  margin-right: 0;
   margin-left: 10px;
+  vertical-align: middle;
 }
 .btn-dark:hover, .btn-dark:focus {
   color: #fff;

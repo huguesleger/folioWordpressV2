@@ -49,7 +49,7 @@ $section_post_description = get_theme_mod('section_post_description');
             <h4 class="title-post"><?php the_title(); ?></h4>
             <?php echo the_excerpt(); ?>
             <div class="btn-post">
-              <a class="btn btn-outline btn-outline-primary btn-default-lg mt-5" href="<?php the_permalink()?>" role="button">voir le projet<i class="far fa-image"></i></a>
+              <a class="btn btn-outline btn-outline-primary btn-default-lg mt-5" href="<?php the_permalink()?>" role="button"><i class="far fa-image"></i> voir le projet</a>
             </div>
         </div>
         <div class="content-img col-lg-7">
