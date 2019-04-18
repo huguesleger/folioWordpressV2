@@ -12,6 +12,9 @@
       background: #fff;
       transition: 0.3s ease-in-out;
     }
+    &.__fixed-top {
+      height:60px;
+    }
   .container-main {
     padding-right: 35px;
     padding-left: 35px;
@@ -29,17 +32,25 @@
           z-index: 0;
           transition: 0.3s ease-in-out;
         }
+        &.__fixed-branding {
+          line-height: 60px;
+          transition: 0.1s ease-in-out;
+        }
       .logo {
         width: 45px;
         display: inline-block;
       }
       .title {
-        color: #000;
+        color: #fff;
         display: inline-block;
+        vertical-align: middle;
         padding-left: 8px;
         margin: 0;
         text-transform: capitalize;
         transition: 0.3s ease-in-out;
+        &.__black {
+          color: #000;
+        }
       }
     }
   }
@@ -47,14 +58,21 @@
   vertical-align: middle;
   transition: 0.3s ease-in-out;
   fill: $color_secondary;
+  &.__black {
+    fill: #000 !important;
   }
+  }
+}
+
+.main.__bg-color.__fixed-top #logo {
+  height: 35px;
 }
 
 /**** icon hamb ****/
 .nav-btn {
   z-index: 5000;
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.3s, height 0.3s ease-in-out;
   width: 65px;
   height: 80px;
   float: right;
@@ -66,7 +84,7 @@
     right: 0;
     width: 30px;
     height: 2px;
-    background: #000;
+    background: #fff;
       &::before, &::after {
         content:'';
         display: block;
@@ -75,7 +93,7 @@
         left: 0;
         width: 30px;
         height: 2px;
-        background: #000;
+        background: #fff;
         transform: translateY(-8px);
         transition: transform 0.3s;
       }
@@ -88,6 +106,19 @@
         left: 0;
       transform: translateY(8px);
     }
+    &.__black {
+      background: #000;
+    }
+    &.__black::before {
+      background: #000;
+    }
+    &.__black::after {
+      background: #000;
+    }
+    }
+    &.__fixed-nav-btn {
+      height: 60px;
+      transition: 0.1s ease-in-out;
     }
     &:hover {
          .nav-fill::before {
@@ -118,12 +149,15 @@
     }
   }
   .nav-txt {
-    color: #000;
+    color: #fff;
     transform: rotate(-90deg)translateX(20%);
     position: absolute;
     left: 5px;
     top: 50%;
     font-size: 12px;
+      &.__black {
+        color: #000;
+      }
       &.__nav-txt-white {
         color: #fff;
       }
@@ -170,11 +204,10 @@
 
 /**** menu-item hover effect ****/
 .menu-item .__color-nav {
-  transition: 0.5s ease-in-out;
+  transition: padding-left 0.5s ease-in-out, color 0.2s ease-in-out;
     &:hover {
       padding-left: 15px;
       color: $color_primary;
-      transition: 0.5s ease-in-out;
     }
 }
 .menu-item .__color-nav::before {
@@ -284,5 +317,21 @@
             margin: 15px 0;
           }
       }
+  }
+  .main .container-main .branding .title {
+    display: none;
+  }
+  .main {
+    height: 50px !important;
+  }
+  .main .container-main .branding {
+    line-height: 50px !important;
+  }
+  .main #logo {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .nav-btn {
+    height: 50px !important;
   }
 }

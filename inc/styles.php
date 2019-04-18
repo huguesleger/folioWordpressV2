@@ -36,21 +36,33 @@ $custom .= ".main #logo {fill:" . esc_attr($color_logo) . ";}"."\n";
   //title-section
   $custom .= ".title-section {border-color:" . esc_attr($color_primary) . ";}"."\n";
   //btn
+	$custom .= ".btn-default-primary {background:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".btn-default-primary {border-color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".btn-default-primary:hover {border-color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".btn-default-primary:hover {color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-outline-primary {color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-outline-primary {border-color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-outline-primary:hover, .btn-outline-primary:focus {background:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-outline-primary:hover, .btn-outline-primary:focus {border-color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-previous .title-meta {color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-previous .title-meta {border-color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-previous .title-meta:hover {background:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-next .title-meta {background:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-next .title-meta {border-color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".nav-next .title-meta:hover {color:" . esc_attr($color_primary) . ";}"."\n";
   //nav
   $custom .= ".wrap-nav .menu .menu-item.current-menu-item {color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".menu-item .__color-nav:hover {color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".menu-item .__color-nav::before {background:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= "#illu-nav .__color-nav {stroke:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= "#illu-nav .__tcolor {fill:" . esc_attr($color_primary) . ";}"."\n";
+		$custom .= ".infos-nav .info-item .item:hover, .infos-nav .info-item-social .item:hover {color:" . esc_attr($color_primary) . ";}"."\n";
   //go top
   $custom .= ".footer .gotop {background:" . esc_attr($color_primary) . ";}"."\n";
   //title-header
   $custom .= ".header-page .header-page-img .hero-page h1 {border-color:" . esc_attr($color_primary) . ";}"."\n";
   //section graphisme
-  $custom .= ".section-design .row .design-left .design-block .title-block .design-icon {background:" . esc_attr($color_primary) . ";}"."\n";
+  $custom .= ".section-design .row .design-left .design-block .design-icon {background:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".section-create .desc-create .btn-create {fill:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".slick-dots li button:before {border-color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".slick-dots li.slick-active button:before {background:" . esc_attr($color_primary) . ";}"."\n";
@@ -69,6 +81,7 @@ $custom .= ".main #logo {fill:" . esc_attr($color_logo) . ";}"."\n";
   $custom .= ".title-form {border-color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-submit .btn-primary {border-color:" . esc_attr($color_primary) . ";}"."\n";
   $custom .= ".btn-submit .btn-primary:hover {color:" . esc_attr($color_primary) . ";}"."\n";
+	$custom .= ".btn-submit .btn-primary {background:" . esc_attr($color_primary) . ";}"."\n";
 
 //color-secondary
   //metier2
@@ -78,8 +91,15 @@ $custom .= ".main #logo {fill:" . esc_attr($color_logo) . ";}"."\n";
   $custom .= ".section-service .icon-item {color:" . esc_attr($color_secondary) . ";}"."\n";
   $custom .= ".section-service .icon-item:hover {background:" . esc_attr($color_secondary) . ";}"."\n";
   $custom .= ".section-service .icon-item:hover {border-color:" . esc_attr($color_secondary) . ";}"."\n";
+	//page contact
+	$custom .= ".contact .content-infos .social-list {background:" . esc_attr($color_secondary) . ";}"."\n";
+	$custom .= ".contact .content-infos .social-list {border-color:" . esc_attr($color_secondary) . ";}"."\n";
+	$custom .= ".contact .content-infos .social-list:hover {border-color:" . esc_attr($color_secondary) . ";}"."\n";
+	$custom .= ".contact .content-infos .social-list:hover .link-social {color:" . esc_attr($color_secondary) . ";}"."\n";
+	$custom .= ".contact .content-infos .content-list-contact .email:hover {color:" . esc_attr($color_secondary) . ";}"."\n";
   //Footer
   $custom .= ".footer .wrap-copy {background:" . esc_attr($color_secondary) . ";}"."\n";
+	$custom .= ".social-footer:hover {color:" . esc_attr($color_secondary) . ";}"."\n";
 
 //color nav bg
   $custom .= ".shape-overlays {fill:" . esc_attr($color_nav_bg) . ";}"."\n";

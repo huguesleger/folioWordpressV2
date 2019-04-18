@@ -34,6 +34,10 @@
   .img-hero {
     padding-top: 8rem;
     float: right;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
   }
   .hero-title {
     span {
@@ -55,6 +59,15 @@
     }
   }
 }
+@keyframes slide {
+  0% { transform: translateY(-10px);}
+  100% {transform: translateY(10px);}
+}
+@include minmaxwidth(sm, lg) {
+  .hero.hero-bg {
+    background-size: 100% 100%;
+  }
+}
 @include minmaxwidth(sm, md) {
   .hero {
     min-height: 540px;
@@ -70,5 +83,17 @@
   }
   .hero .img-hero {
     padding-top: 3rem;
+  }
+  .hero .hello {
+    margin: 0 auto;
+  }
+  .hero .hello .hello-part1, .hero .hello .hello-part2 {
+    fill: #fff;
+  }
+  .hero .hello .hello-rect {
+    stroke: #fff;
+  }
+  .hero-content {
+    text-align: center;
   }
 }

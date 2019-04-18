@@ -215,7 +215,7 @@ new WOW().init();
 /*--------------------------------------------
     load function
 ---------------------------------------------*/
-$(window).load(function(){
+$(document).ready(function(){
   slider();
   showCollapse();
   parallax();

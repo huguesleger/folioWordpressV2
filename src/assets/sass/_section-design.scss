@@ -12,20 +12,20 @@
            padding-right: 20px;
            padding-left: 0;
              .title-block {
+               display: inline-block;
                font-family: $font_secondary;
                font-weight: 700;
                text-transform: capitalize;
-               margin-bottom: 1rem;
                font-size: 1.25rem;
-                .design-icon {
-                  padding: 8px;
-                  width: 36px;
-                  display: inline-block;
-                  text-align: center;
-                  background: $color_primary;
-                  color: #fff;
-                  margin-right: 10px;
-                }
+             }
+             .design-icon {
+               padding: 8px;
+               width: 36px;
+               display: inline-block;
+               text-align: center;
+               background: $color_primary;
+               color: #fff;
+               margin-right: 10px;
              }
          }
      }

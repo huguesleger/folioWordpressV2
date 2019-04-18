@@ -28,6 +28,7 @@
      array(
          'default'           => $defaults['color_logo'],
          'sanitize_callback' => 'portfoliohl_sanitize_text',
+         'transport'          => 'postMessage',
      )
  );
  $wp_customize->add_control(
@@ -46,6 +47,7 @@
      array(
          'default'           => $defaults['color_primary'],
          'sanitize_callback' => 'portfoliohl_sanitize_text',
+         'transport'         => 'postMessage',
      )
  );
  $wp_customize->add_control(
@@ -64,6 +66,7 @@
      array(
          'default'           => $defaults['color_secondary'],
          'sanitize_callback' => 'portfoliohl_sanitize_text',
+         'transport'         => 'postMessage',
      )
  );
  $wp_customize->add_control(
@@ -90,6 +93,7 @@
      array(
          'default'           => $defaults['color_nav'],
          'sanitize_callback' => 'portfoliohl_sanitize_text',
+         'transport'         => 'postMessage',
      )
  );
  $wp_customize->add_control(

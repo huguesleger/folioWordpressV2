@@ -13,7 +13,7 @@ $wp_customize->add_section(
     'section_design',
   array(
       'title'       => esc_html__('Section Design', 'portfoliohl'),
-      'priority'    => 11,
+      'priority'    => 10,
       'panel'       => 'portfoliohl_sections_panel',
   )
 );
@@ -39,6 +39,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
   )
 );
 $wp_customize->add_control(
@@ -80,6 +81,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
   )
 );
 $wp_customize->add_control(
@@ -96,6 +98,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
   )
 );
 $wp_customize->add_control(
@@ -107,29 +110,3 @@ $wp_customize->add_control(
     )
   );
 }
-/* Image
-----------------------------------------------------------------------*/
-$wp_customize->add_control( new Portfoliohl_Info( $wp_customize, 'image', array(
-  'label' => esc_html__('Image ', 'portfoliohl'),
-  'section'   => 'section_design',
-  'settings'  => array(),
-  ) )
-);
-//img
-$wp_customize->add_setting(
-    'section_design_img',
-    array(
-        'default'           => '',
-        'sanitize_callback' => 'esc_url_raw',
-    )
-  );
-$wp_customize->add_control(
-    new WP_Customize_Image_Control( $wp_customize,
-      'section_design_img',
-      array(
-        'label'   => esc_html__('Upload image: ', 'portfoliohl'),
-        'type'    => 'image',
-        'section' => 'section_design',
-        )
-      )
-  );

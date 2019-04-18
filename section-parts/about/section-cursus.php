@@ -37,11 +37,11 @@
                   <span>03</span>
                   <?php endif; ?>
                 </div>
-           <div class="formation">
-             <p><?php echo esc_html($cursus_formation_year); ?></p>
-             <p><?php echo esc_html($cursus_formation_title); ?><span class="formation-school pl-md-2"><?php echo esc_html($cursus_formation_school); ?></span></p>
+           <div id ="formation-<?php echo esc_html($c)?>" class="formation">
+             <p class="year"><?php echo esc_html($cursus_formation_year); ?></p>
+             <p class="formation-title"><?php echo esc_html($cursus_formation_title); ?><span class="formation-school pl-md-2"><?php echo esc_html($cursus_formation_school); ?></span></p>
            </div>
-           <div class="description">
+           <div id ="description-<?php echo esc_html($c)?>" class="description">
              <p><?php echo esc_html($cursus_formation_description); ?></p>
            </div>
          <?php } ?>

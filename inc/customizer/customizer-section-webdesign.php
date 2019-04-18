@@ -38,6 +38,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -54,6 +55,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -82,6 +84,7 @@ $wp_customize->add_setting(
     'section_webdesign_btn_title',
     array(
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
   );
 
@@ -125,6 +128,7 @@ $wp_customize->add_setting(
      array(
          'default'            => $defaults['webdesign_parallax_img'],
          'sanitize_callback'  => 'esc_url_raw',
+         'transport' => 'postMessage',
      )
  );
 $wp_customize->add_control(
@@ -153,6 +157,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -169,6 +174,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -197,6 +203,7 @@ $wp_customize->add_setting(
     'section_webdesign_device_btn_title',
     array(
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
   );
 
@@ -214,6 +221,7 @@ $wp_customize->add_setting(
      array(
          'default'            => $defaults['webdesign_device_img'],
          'sanitize_callback'  => 'esc_url_raw',
+         'transport' => 'postMessage',
      )
  );
 $wp_customize->add_control(

@@ -115,6 +115,8 @@ if ( !function_exists('portfoliohl_customizer_defaults') ) :
 function portfoliohl_customizer_defaults() {
 	$defaults = array(
 
+    //header-hero
+    'img_hero'                    => get_template_directory_uri() . '/assets/img/illu-hero.png',
     //couleur theme
     'color_primary'               => '#64C9FE',
     'color_secondary'             => '#3f4c94',
@@ -131,7 +133,7 @@ function portfoliohl_customizer_defaults() {
     'service_class'               => 'style-inline',
     //webdesign
     'webdesign_parallax_speed'    =>  '1.85',
-    'webdesign_parallax_img'      => get_template_directory_uri() . '/assets/img/template_1.png',
+    'webdesign_parallax_img'      => get_template_directory_uri() . '/assets/img/template-salegosse.png',
     'webdesign_device_img'        => get_template_directory_uri() . '/assets/img/wireframe.gif',
     //portfolio
     'portfolio_grid'              => '3',

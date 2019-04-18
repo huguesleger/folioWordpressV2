@@ -22,6 +22,12 @@
      }
  }
 
+ //radio
+ function portfoliohl_sanitize_radio( $input ) {
+     if ( in_array( $input, array( 'active', 'desactive'), true ) ) {
+         return $input;
+     }
+ }
 
  //folio layout
  function portfoliohl_sanitize_folio( $input ) {

@@ -31,6 +31,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -56,6 +57,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -72,6 +74,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -88,6 +91,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -104,6 +108,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -112,5 +117,68 @@ $wp_customize->add_control(
         'type'        => 'text',
         'label'       =>  esc_html__('Description 2:', 'portfoliohl'),
         'section'     => 'header_hello',
+    )
+);
+
+/* Image
+----------------------------------------------------------------------*/
+$wp_customize->add_control( new Portfoliohl_Info( $wp_customize, 'Image', array(
+  'label' => esc_html__('Image ', 'portfoliohl'),
+  'section' => 'header_hello',
+  'settings' => array(),
+  'priority' => 10
+  ) )
+);
+
+//illu-header
+$wp_customize->add_setting(
+    'header_illu',
+    array(
+        'default'           =>  $defaults['img_hero'],
+        'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
+    )
+);
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+      'header_illu',
+        array(
+           'label'     => esc_html__( 'Upload image:', 'portfoliohl' ),
+           'type'      => 'image',
+           'section'   => 'header_hello',
+        )
+    )
+);
+
+/* Btn
+----------------------------------------------------------------------*/
+$wp_customize->add_control( new Portfoliohl_Info( $wp_customize, 'Boutton', array(
+  'label' => esc_html__('Boutton ', 'portfoliohl'),
+  'section' => 'header_hello',
+  'settings' => array(),
+  'priority' => 10
+  ) )
+);
+
+//btn enter
+$wp_customize->add_setting(
+    'header_enter',
+    array(
+        'default'           =>  '',
+        'sanitize_callback' => 'portfoliohl_sanitize_radio',
+        'transport' => 'postMessage',
+    )
+);
+$wp_customize->add_control(
+    'header_enter',
+    array(
+        'type'        => 'radio',
+        'label'       => __('Afficher le boutton entrer', 'portfoliohl'),
+        'section'     => 'header_hello',
+        'choices' => array(
+            'active'    => __('Activer', 'portfoliohl'),
+            'desactive' => __('Désactiver', 'portfoliohl')
+        ),
     )
 );

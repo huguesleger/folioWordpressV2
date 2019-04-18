@@ -6,13 +6,17 @@
 ?>
 
 <?php
+
 /**
 * Header type
 */
 function portfoliohl_header() {
 
   $img_header_page = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
-  $img_hero = (get_template_directory_uri() . '/assets/img/illu-hero.png');
+  // $img_hero = (get_template_directory_uri() . '/assets/img/illu-hero.png');
+  $img_hero       = get_theme_mod('header_illu', get_template_directory_uri() . '/assets/img/illu-hero.png');
+  $header_enter = get_theme_mod('header_enter' ,'active');
+
 /* metier */
   $header_txt_intro = get_theme_mod('header_txt_intro');
   $header_txt_metier_1 = get_theme_mod('header_txt_metier_1');
@@ -25,7 +29,7 @@ function portfoliohl_header() {
 <header class="hero hero-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 hero-content">
           <div class="hello">
             <?php get_template_part( 'template-parts/svg/content', 'illu-hello' ); ?>
           </div>
@@ -33,10 +37,13 @@ function portfoliohl_header() {
               <span><?php echo esc_html($header_txt_intro);?></span>
               <h1><?php echo esc_html($header_txt_metier_1);?></h1>
               <h2><?php echo esc_html($header_txt_metier_2);?></h2>
-              <p><?php echo esc_html($header_desc_metier_1);?></p>
-              <p><?php echo esc_html($header_desc_metier_2);?></p>
+              <p class="desc-metier-first"><?php echo esc_html($header_desc_metier_1);?></p>
+              <p class="desc-metier-last"><?php echo esc_html($header_desc_metier_2);?></p>
           </div>
+          <?php
+          if ( $header_enter == 'active' ) { ?>
             <a id="enter" class="btn btn-default btn-default-primary my-4 animated fadeInUp delay-3s" href="#design">Enter<i class="fas fa-angle-down"></i></a>
+          <?php } ?>
         </div>
         <div class="col-md-6">
           <div class="img-hero">

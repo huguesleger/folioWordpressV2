@@ -47,6 +47,7 @@ $wp_customize->add_setting(
 array(
     'default'           => '',
     'sanitize_callback' => 'portfoliohl_sanitize_text',
+    'transport' => 'postMessage',
 )
 );
 $wp_customize->add_control(
@@ -74,6 +75,7 @@ $wp_customize->add_setting(
 array(
     'default'           => '',
     'sanitize_callback' => 'portfoliohl_sanitize_text',
+    'transport' => 'postMessage',
 )
 );
 $wp_customize->add_control(
@@ -85,29 +87,13 @@ array(
 )
 );
 
-//cursus école
-$wp_customize->add_setting(
-'cursus_formation_school'. $c,
-array(
-    'default'           => '',
-    'sanitize_callback' => 'portfoliohl_sanitize_text',
-)
-);
-$wp_customize->add_control(
-'cursus_formation_school'. $c,
-array(
-    'type'        => 'text',
-    'label'       => esc_html__('Ecole:', 'portfoliohl'),
-    'section'     => 'section_cursus',
-)
-);
-
 //cursus formation
 $wp_customize->add_setting(
 'cursus_formation_title'. $c,
 array(
     'default'           => '',
     'sanitize_callback' => 'portfoliohl_sanitize_text',
+    'transport' => 'postMessage',
 )
 );
 $wp_customize->add_control(
@@ -119,12 +105,32 @@ array(
 )
 );
 
+//cursus école
+$wp_customize->add_setting(
+'cursus_formation_school'. $c,
+array(
+    'default'           => '',
+    'sanitize_callback' => 'portfoliohl_sanitize_text',
+    'transport' => 'postMessage',
+
+)
+);
+$wp_customize->add_control(
+'cursus_formation_school'. $c,
+array(
+    'type'        => 'text',
+    'label'       => esc_html__('Ecole:', 'portfoliohl'),
+    'section'     => 'section_cursus',
+)
+);
+
 //cursus description
 $wp_customize->add_setting(
 'cursus_formation_description'. $c,
 array(
     'default'           => '',
     'sanitize_callback' => 'portfoliohl_sanitize_text',
+    'transport' => 'postMessage',
 )
 );
 $wp_customize->add_control(
@@ -177,6 +183,7 @@ for ($c = 1; $c <= 3; $c++) {
   array(
       'default'           => '',
       'sanitize_callback' => 'portfoliohl_sanitize_text',
+      'transport' => 'postMessage',
   )
   );
   $wp_customize->add_control(
@@ -193,6 +200,7 @@ for ($c = 1; $c <= 3; $c++) {
   array(
       'default'           => '',
       'sanitize_callback' => 'portfoliohl_sanitize_text',
+      'transport' => 'postMessage',
   )
   );
   $wp_customize->add_control(
@@ -209,6 +217,7 @@ for ($c = 1; $c <= 3; $c++) {
   array(
       'default'           => '',
       'sanitize_callback' => 'portfoliohl_sanitize_text',
+      'transport' => 'postMessage',
   )
   );
   $wp_customize->add_control(
@@ -307,5 +316,26 @@ for ($c = 1; $c <= 12; $c++) {
       'label'       => esc_html__('Nom:', 'portfoliohl'),
       'section'     => 'section_outils',
   )
+  );
+  //conception data pourcent
+  $wp_customize->add_setting(
+    'outil_data' . $c,
+    array(
+        'default'           => '0',
+        'sanitize_callback' =>  'absint',
+    )
+  );
+  $wp_customize->add_control(
+    'outil_data' . $c,
+    array(
+        'type'        => 'number',
+        'label'       => esc_html__('Maîtrise de l\'outil (%)', 'portfoliohl'),
+        'input_attrs' => array(
+        'min'         => 1,
+        'max'         => 100,
+        'step'        => 1,
+        ),
+        'section'     => 'section_outils',
+    )
   );
 }

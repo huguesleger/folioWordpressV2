@@ -21,7 +21,7 @@ while ( have_posts() ) : the_post(); ?>
   endif; ?>
 <?php endwhile; ?>
 <div class="works-content">
-<?php echo '<div class="'. $portfolio_class .'">'; ?>
+<?php echo '<div id="style" class="'. $portfolio_class .'">'; ?>
 <div class="row px-custom">
 <?php
 $query = new WP_query(array(

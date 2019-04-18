@@ -19,14 +19,14 @@
 
     if ( $number_number ) {
             ?>
-              <div class="content-number col-md-4 pb-4">
+              <div id ="contentNumber-<?php echo esc_html($c)?>" class="content-number col-md-4 pb-4">
               <div class="number">
                 <p class="counter" data-count="<?php echo esc_html($number_number); ?>" >0</p>
               </div>
               <div class="number-type">
                 <p><?php echo esc_html($number_type); ?></p>
               </div>
-              <p><?php echo esc_html($number_desc); ?></p>
+              <p class="number-desc"><?php echo esc_html($number_desc); ?></p>
             <?php } ?>
               </div>
 

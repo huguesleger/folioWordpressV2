@@ -46,7 +46,7 @@ $query = new WP_query(array(
             <i class="<?php echo esc_attr( $section_service_icon ); ?>"></i>
           <?php endif; ?>
           </div>
-          <div class="icon-caption">
+          <div id ="iconCaption-<?php echo esc_html($c)?>" class="icon-caption">
             <p><?php echo esc_html($section_service_icon_desc); ?></p>
           </div>
         </div>
@@ -137,7 +137,7 @@ $query = new WP_query(array(
                 <i class="<?php echo esc_attr( $section_service_icon ); ?>"></i>
               <?php endif; ?>
               </div>
-              <div class="icon-caption">
+              <div id ="iconCaption-<?php echo esc_html($c)?>" class="icon-caption">
                 <p><?php echo esc_html($section_service_icon_desc); ?></p>
               </div>
             </div>

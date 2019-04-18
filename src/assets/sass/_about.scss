@@ -8,6 +8,7 @@
       }
   }
   .content-cursus {
+    padding-bottom: 3rem;
     .number-cursus {
       font-size: 8em;
       font-family: $font_number;
@@ -20,7 +21,7 @@
     .formation {
         font-weight: 900;
         padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         padding-left: 4rem;
         padding-right: 2rem;
         position: relative;
@@ -32,6 +33,10 @@
         .formation-school {
           color: $color_primary;
         }
+    }
+    .description {
+      padding-left: 4rem;
+      padding-right: 2rem;
     }
   }
 }
@@ -76,11 +81,22 @@
       padding-bottom: 1rem;
     }
   }
+  .progress {
+    border-radius: 0;
+    height: 1.5rem;
+  }
 }
 
 @include maxwidth(sm) {
+  .section-cursus .content-cursus {
+    padding-bottom: 2rem;
+  }
   .section-cursus .content-cursus .formation {
     font-size: 1.7rem;
+    padding-left: 3rem;
+    padding-right: 0;
+  }
+  .section-cursus .content-cursus .description {
     padding-left: 3rem;
     padding-right: 0;
   }

@@ -38,6 +38,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -54,6 +55,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(

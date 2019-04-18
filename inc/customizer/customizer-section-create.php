@@ -12,7 +12,7 @@ $wp_customize->add_section(
     'section_create',
     array(
         'title'         => esc_html__('Section Create', 'portfoliohl'),
-        'priority'      => 10,
+        'priority'      => 11,
         'panel'         => 'portfoliohl_sections_panel',
     )
 );
@@ -38,6 +38,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -54,6 +55,7 @@ $wp_customize->add_setting(
     array(
         'default'           => '',
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(

@@ -21,6 +21,7 @@ $wp_customize->add_setting(
     array(
       'default' 					 => $defaults['portfolio_grid'],
       'sanitize_callback'  =>'portfoliohl_sanitize_text',
+      'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
@@ -42,6 +43,7 @@ $wp_customize->add_setting(
     array(
         'default'           => $defaults['portfolio_class'],
         'sanitize_callback' => 'portfoliohl_sanitize_text',
+        'transport' => 'postMessage',
     )
 );
 $wp_customize->add_control(
